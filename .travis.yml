@@ -1,0 +1,58 @@
+language: android
+
+sudo: false
+
+jdk:
+  - oraclejdk8
+
+env:
+  global:
+    - secure: aSGMYok+2g1qB2/87CBgUinuBrJavhCYVCTf36Ths+H9KP5wX1X8wFIOdjlmqLz6L8FBNojluVnKPpmaOFXxV1oa2HcioEx7b+nIujC5GRqEf+3Tq3ClNq1no/Qk52FU15yRXOYs3qrG/X9gY6+OeJRanQKp1dR1Ybys+4RYvNFuQvD+BYp1G52BeYLVaPPVhoNGSNzQkeJhwPdarSkO5lRML536WwdtUIX31BzLq7d3vBMpcHaJZ2MDj0tEKr9Ja0z6ifoKWpUQ+RgZmkhA8Ga1hQJdYWSITZE+0SZN1+OPT6yhIer2wx16avKxS4oquk4iZVv/MkD2tsZv1NsoRA8qiW5ycvvjI3u4G3oSZs9oHTQnkld3TEb0YWmVaNO/0WXQejnQpDtzlA3+rcjJ0hdg7fNSfx2y/jI+uWGIZVNEyYY8ytFs/Q6cMWNh9dkimFLNQzvRoUFajcjAY6wUm96K++ef0knn70S5V+LE6ireeqCwvWCMqbwBy9dP7WY1kOq061vQTjfbsM6JbwSgBHfoyivaUqs060cCiaVPqo817qLn6lhQMTQo2MpssDPoLDgbTGEd0Wtx8Yw7v7HIonL0ZkYYsgNd4Yfkx4ytDEyiGOhqnsZguLTviRaLonPZhN//a3JRDjscd5c2lyd0fvIXBi6YgGvo7+Gh9xJRUVk=
+    - secure: ao4ksT1axbuH1WZlW1zCUL1LUTQpPGvzXvPFj8gLH548q7Ta/jI5HFNmHcs1PFE9vT8ZTXqS1kHJRu6CKUqBLK0pkOlfLo5OlCNuspkoOWlVjfd7jOQ4JSACYSQMntYJb1Py9CY9glzsny3u+/+9waBqFWeFWBwwbWyPAhLYJ8YoxAytSeLosPOzfSxfzwgrvPaWeuBY7tM1yejoehRYVYmDXvVc4eARp/1cwCnPjqne9IzSzHG87aQxClCXfMJeS3dsboT3klpJQDZWkKCChDXIvGhyI7LsUUkrKO7dvLZxNQOpDAxSGqW0wmEXKz0Q4SA0daV0w5/jyj4EBfc58Uda04fjbY512ztwRm+3Tw0FF1TaYaDUsiTkLlqigyGGjOQuy3LCyViGcWXB9sIVZv3Hz4jrj/RQPeMyOMeJveWAeJzkV+GzswQ8GljpRyRdvB4cQsLV3rQqppy8don2voz0rg61E2DCYJQ9sH13Iv+2288tMpX5O8W5Y1JOs54/S7BbenQsv01/k9wmemmoOcaNOBW5Yy+6OoSJVrTsvJFw8ArSzyMhAbkeHWwc1Yq2b70WB/GD8E/LxgeGvtoiby7J+hUVLgvKRTyBGIPJUJQljodOylK2rA2NLYwjbEp9kkAztBsOmKAQons1GCYTYZMyJVZnRXU+e11+0xQO0uA=
+    - secure: wWqAagknBLUfqrnM08ipj6+NkxKhIzKiY401nA/QoV0fDq7JjZFlcJW0mA4+g8+Pry4Z0+uybkg5dRXEAQgurKf6pF2b/Sf9vO4ox21BPLIlfleV5GKThky/it0mH5resSaPqI6oWUHKolDW7Dox4Ykyjq0D/eOcl6d5c5LevpMpqSsQKM6S5SH6M8Jxay/xYfqnnYu3a4rbBDM+SOYmeHrFskq7tsOvs0LEhNmeOTQ+VN4yPOEXDev5ex18euo7kvMEA6bxfP+sXlYW3fTb9GRUpOTnHlgxPiyJ3p4HmHi2KHSk5KE2dWLTwCnvq4itFrwxl+Qc11TH/5ZVB12jI45tmsgVhFxCcjcw4tyTfbuJknPOoZTvmYV69rIl1KbRqT8KonAjZIRB6Eel3yc94/uZZ2ia+ifcgaPjL6GMYITrUPXJhC22m5bGBfLOug+kymNILt3Zb42cVM5U6ygsRZu//3zMY8/Y4GlSWdU2wA/OAyST9Mtfk/OCSWNaf1MiL4KTmkdnouV1ulP19mk953MhQiW7Adzy6CUmjnZJVVBDhSWRi2ajZfEx3m+vf3FHQtq5jcew++AY2JY+ALmOvAyjxtRue2wMN+wWZ68ikxUFbugJLxHgy7VxGJoQAyvEzxHx5vHnDsqcji4Z4eBe3AxBOF/+ze3OxcHpJ08s854=
+
+android:
+  components:
+    - tools
+    - android-22
+    - android-26
+    - platform-tools
+    - build-tools-26.0.1
+    - extra-android-m2repository
+    - extra-google-m2repository
+    - sys-img-armeabi-v7a-android-22
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_07bae167eb97_key -iv $encrypted_07bae167eb97_iv -in rss-reader.jks.enc -out rss-reader.jks -d
+
+before_script:
+  - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
+  - emulator -avd test -no-skin -no-audio -no-window &
+  - android-wait-for-emulator
+  - adb shell input keyevent 82 &
+
+script:
+  - ./gradlew clean testDebug connectedAndroidTest lintDebug jacocoTestReport coveralls -Dscan --configure-on-demand --parallel --stacktrace
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.android/build-cache
+
+before_deploy:
+  - cp $TRAVIS_BUILD_DIR/.jks $HOME
+  - jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 $HOME/android/release-unsigned.apk rss-reader -keystore $HOME/.jks -storepass $storepass -keypass $keypass
+  - "${ANDROID_HOME}/build-tools/26.0.1/zipalign 4 $HOME/android/release-unsigned.apk $HOME/android/rss-reader.apk"
+
+deploy:
+  provider: releases
+  api_key: "$GITHUB_TOKEN"
+  file: "$HOME/android/rss-reader.apk"
+  skip_cleanup: true
+  on:
+    tags: true
