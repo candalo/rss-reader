@@ -3,8 +3,8 @@ package com.github.rssreader.features.feedsubscription.domain
 import com.github.rssreader.base.domain.Thread
 import com.github.rssreader.features.feed.domain.models.Feed
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
-import com.github.rssreader.features.feedsubscription.domain.usecases.Subscribe
 import com.github.rssreader.features.feedsubscription.domain.repository.FeedSubscriptionRepository
+import com.github.rssreader.features.feedsubscription.domain.usecases.Subscribe
 import com.nhaarman.mockito_kotlin.given
 import com.nhaarman.mockito_kotlin.times
 import com.nhaarman.mockito_kotlin.verify
@@ -25,32 +25,27 @@ class SubscribeTest {
         const val INVALID_FEED_URL = "https://invalid-url-feed.com"
     }
 
-    private lateinit var feeds: List<Feed>
     private lateinit var subscribeUseCase: Subscribe
-    private var feedSubscriptionTestObserver = TestObserver<List<Feed>>()
+    private var feedSubscriptionTestObserver = TestObserver<Feed>()
     private var testScheduler = TestScheduler()
 
     @Mock private lateinit var subscriberThread: Thread
     @Mock private lateinit var observerThread: Thread
     @Mock private lateinit var feedSubscriptionRepository: FeedSubscriptionRepository
-    @Mock private lateinit var feed1: Feed
-    @Mock private lateinit var feed2: Feed
-    @Mock private lateinit var feed3: Feed
+    @Mock private lateinit var feed: Feed
 
     @Before
     fun init() {
         MockitoAnnotations.initMocks(this)
         given { subscriberThread.get() }.willReturn(testScheduler)
         given { observerThread.get() }.willReturn(testScheduler)
-
-        feeds = listOf(feed1, feed2, feed3)
     }
 
     @Test
-    fun execute_validFeedUrl_willReturnFeedList() {
-        val feedsObservable = Observable.just(feeds)
+    fun execute_validFeedUrl_willReturnFeed() {
+        val feedObservable = Observable.just(feed)
         given { feedSubscriptionRepository.create(FeedSubscription(VALID_FEED_URL)) }
-                .willReturn(feedsObservable)
+                .willReturn(feedObservable)
 
         subscribeUseCase = Subscribe(subscriberThread, observerThread, feedSubscriptionRepository)
         subscribeUseCase.execute(feedSubscriptionTestObserver, FeedSubscription(VALID_FEED_URL))
@@ -59,7 +54,7 @@ class SubscribeTest {
 
         testScheduler.advanceTimeTo(1, TimeUnit.SECONDS)
 
-        feedSubscriptionTestObserver.assertValue(feeds)
+        feedSubscriptionTestObserver.assertValue(feed)
         feedSubscriptionTestObserver.assertComplete()
         feedSubscriptionTestObserver.assertNoErrors()
     }

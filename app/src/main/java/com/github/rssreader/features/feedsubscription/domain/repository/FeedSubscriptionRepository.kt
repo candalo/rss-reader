@@ -7,6 +7,6 @@ import io.reactivex.Observable
 
 interface FeedSubscriptionRepository {
 
-    fun create(feedSubscription: FeedSubscription) : Observable<List<Feed>>
+    fun create(feedSubscription: FeedSubscription) : Observable<Feed>
 
 }

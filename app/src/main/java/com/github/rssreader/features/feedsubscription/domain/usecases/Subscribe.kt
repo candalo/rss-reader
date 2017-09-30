@@ -11,8 +11,8 @@ import io.reactivex.Observable
 class Subscribe(subscriberThread: Thread,
                 observerThread: Thread,
                 private val feedSubscriptionRepository: FeedSubscriptionRepository
-) : BaseUseCase<List<Feed>, FeedSubscription>(subscriberThread, observerThread) {
+) : BaseUseCase<Feed, FeedSubscription>(subscriberThread, observerThread) {
 
-    override fun getObservable(params: FeedSubscription): Observable<List<Feed>> =
+    override fun getObservable(params: FeedSubscription): Observable<Feed> =
             feedSubscriptionRepository.create(params)
 }
