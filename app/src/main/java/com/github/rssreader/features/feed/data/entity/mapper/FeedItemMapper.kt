@@ -1,17 +1,14 @@
 package com.github.rssreader.features.feed.data.entity.mapper
 
 import com.github.rssreader.base.data.entity.mapper.Mapper
-import com.github.rssreader.features.feed.data.entity.FeedEntity
-import com.github.rssreader.features.feed.domain.models.Feed
+import com.github.rssreader.features.feed.data.entity.FeedItemEntity
+import com.github.rssreader.features.feed.domain.models.FeedItem
 import io.reactivex.Observable
 
 
-class FeedItemMapper : Mapper<Feed, FeedEntity> {
-    override fun transformToEntity(model: Feed): Observable<FeedEntity> {
-        TODO("not implemented")
-    }
+interface FeedItemMapper : Mapper<FeedItem, FeedItemEntity> {
 
-    override fun transformToDomainModel(entity: FeedEntity): Observable<Feed> {
-        TODO("not implemented")
-    }
+    fun transformToEntityList(feedItems: ArrayList<FeedItem>) : Observable<ArrayList<FeedItemEntity>>
+
+    fun transformToDomainModelList(feedItemEntities: ArrayList<FeedItemEntity>): Observable<ArrayList<FeedItem>>
 }

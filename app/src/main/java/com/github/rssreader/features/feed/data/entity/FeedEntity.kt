@@ -2,29 +2,31 @@ package com.github.rssreader.features.feed.data.entity
 
 import org.simpleframework.xml.*
 import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 @Root(name = "channel")
 data class FeedEntity(
         @Element
-        val title: String,
+        val title: String = "",
         @Element
-        val link: String,
+        val link: String = "",
         @Element
-        val description: String,
+        val description: String = "",
         @Element
-        val language: String,
+        val language: String = "",
         @Element(name = "managingEditor")
-        val managingEditorEmail: String,
+        val managingEditorEmail: String = "",
         @Element
-        val pubDate: SimpleDateFormat,
+        val pubDate: SimpleDateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()),
         @Element
-        val lastBuildDate: SimpleDateFormat,
+        val lastBuildDate: SimpleDateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()),
         @Element
-        val category: String,
+        val category: String = "",
         @ElementUnion(
                 Element(name = "url", type = String::class)
         )
-        val image: FeedImageEntity,
+        val image: FeedImageEntity = FeedImageEntity(),
         @ElementListUnion(
                 ElementList(entry = "title", type = String::class, inline = true),
                 ElementList(entry = "link", type = String::class, inline = true),
@@ -34,5 +36,5 @@ data class FeedEntity(
                 ElementList(entry = "commentsLink", type = String::class, inline = true),
                 ElementList(entry = "pubDate", type = SimpleDateFormat::class, inline = true)
         )
-        val items: ArrayList<FeedItemEntity>
+        val items: ArrayList<FeedItemEntity> = ArrayList()
 )
