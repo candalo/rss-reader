@@ -11,6 +11,11 @@ env:
     - secure: ao4ksT1axbuH1WZlW1zCUL1LUTQpPGvzXvPFj8gLH548q7Ta/jI5HFNmHcs1PFE9vT8ZTXqS1kHJRu6CKUqBLK0pkOlfLo5OlCNuspkoOWlVjfd7jOQ4JSACYSQMntYJb1Py9CY9glzsny3u+/+9waBqFWeFWBwwbWyPAhLYJ8YoxAytSeLosPOzfSxfzwgrvPaWeuBY7tM1yejoehRYVYmDXvVc4eARp/1cwCnPjqne9IzSzHG87aQxClCXfMJeS3dsboT3klpJQDZWkKCChDXIvGhyI7LsUUkrKO7dvLZxNQOpDAxSGqW0wmEXKz0Q4SA0daV0w5/jyj4EBfc58Uda04fjbY512ztwRm+3Tw0FF1TaYaDUsiTkLlqigyGGjOQuy3LCyViGcWXB9sIVZv3Hz4jrj/RQPeMyOMeJveWAeJzkV+GzswQ8GljpRyRdvB4cQsLV3rQqppy8don2voz0rg61E2DCYJQ9sH13Iv+2288tMpX5O8W5Y1JOs54/S7BbenQsv01/k9wmemmoOcaNOBW5Yy+6OoSJVrTsvJFw8ArSzyMhAbkeHWwc1Yq2b70WB/GD8E/LxgeGvtoiby7J+hUVLgvKRTyBGIPJUJQljodOylK2rA2NLYwjbEp9kkAztBsOmKAQons1GCYTYZMyJVZnRXU+e11+0xQO0uA=
     - secure: wWqAagknBLUfqrnM08ipj6+NkxKhIzKiY401nA/QoV0fDq7JjZFlcJW0mA4+g8+Pry4Z0+uybkg5dRXEAQgurKf6pF2b/Sf9vO4ox21BPLIlfleV5GKThky/it0mH5resSaPqI6oWUHKolDW7Dox4Ykyjq0D/eOcl6d5c5LevpMpqSsQKM6S5SH6M8Jxay/xYfqnnYu3a4rbBDM+SOYmeHrFskq7tsOvs0LEhNmeOTQ+VN4yPOEXDev5ex18euo7kvMEA6bxfP+sXlYW3fTb9GRUpOTnHlgxPiyJ3p4HmHi2KHSk5KE2dWLTwCnvq4itFrwxl+Qc11TH/5ZVB12jI45tmsgVhFxCcjcw4tyTfbuJknPOoZTvmYV69rIl1KbRqT8KonAjZIRB6Eel3yc94/uZZ2ia+ifcgaPjL6GMYITrUPXJhC22m5bGBfLOug+kymNILt3Zb42cVM5U6ygsRZu//3zMY8/Y4GlSWdU2wA/OAyST9Mtfk/OCSWNaf1MiL4KTmkdnouV1ulP19mk953MhQiW7Adzy6CUmjnZJVVBDhSWRi2ajZfEx3m+vf3FHQtq5jcew++AY2JY+ALmOvAyjxtRue2wMN+wWZ68ikxUFbugJLxHgy7VxGJoQAyvEzxHx5vHnDsqcji4Z4eBe3AxBOF/+ze3OxcHpJ08s854=
 
+branches:
+  only:
+    - master
+    - /^v\d+\.\d+(\.\d+)?(-\S*)?$/ # for tags - e.g. v1.0.0
+
 android:
   components:
     - tools
