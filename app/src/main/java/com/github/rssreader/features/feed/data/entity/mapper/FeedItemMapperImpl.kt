@@ -12,8 +12,7 @@ class FeedItemMapperImpl : FeedItemMapper {
                 model.link,
                 model.description,
                 model.authorEmail,
-                model.category,
-                model.commentsLink,
+                model.categories,
                 model.pubDate
         )
 
@@ -26,8 +25,7 @@ class FeedItemMapperImpl : FeedItemMapper {
                 entity.link,
                 entity.description,
                 entity.authorEmail,
-                entity.category,
-                entity.commentsLink,
+                entity.categories,
                 entity.pubDate
         )
 

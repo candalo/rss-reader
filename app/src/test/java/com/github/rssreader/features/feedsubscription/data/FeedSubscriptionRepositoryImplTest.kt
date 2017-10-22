@@ -2,8 +2,8 @@ package com.github.rssreader.features.feedsubscription.data
 
 import com.github.rssreader.base.data.entity.mapper.Mapper
 import com.github.rssreader.base.domain.Thread
-import com.github.rssreader.features.feed.data.entity.FeedEntity
-import com.github.rssreader.features.feed.domain.models.Feed
+import com.github.rssreader.features.feed.data.entity.FeedChannelEntity
+import com.github.rssreader.features.feed.domain.models.FeedChannel
 import com.github.rssreader.features.feedsubscription.data.repository.FeedSubscriptionRepositoryImpl
 import com.github.rssreader.features.feedsubscription.data.repository.datasource.FeedSubscriptionDataStore
 import com.github.rssreader.features.feedsubscription.data.repository.datasource.FeedSubscriptionDataStoreFactory
@@ -29,16 +29,16 @@ class FeedSubscriptionRepositoryImplTest {
         const val INVALID_FEED_URL = "https://invalid-url-feed.com"
     }
 
-    private val testObserver = TestObserver<Feed>()
+    private val testObserver = TestObserver<FeedChannel>()
     private val testScheduler = TestScheduler()
     private lateinit var repository : FeedSubscriptionRepository
 
     @Mock private lateinit var dataStoreFactory: FeedSubscriptionDataStoreFactory
     @Mock private lateinit var dataStore: FeedSubscriptionDataStore
-    @Mock private lateinit var dataMapper: Mapper<Feed, FeedEntity>
+    @Mock private lateinit var dataMapper: Mapper<FeedChannel, FeedChannelEntity>
     @Mock private lateinit var thread: Thread
-    @Mock private lateinit var feed: Feed
-    @Mock private lateinit var feedEntity: FeedEntity
+    @Mock private lateinit var feed: FeedChannel
+    @Mock private lateinit var feedEntity: FeedChannelEntity
 
     @Before
     fun init() {

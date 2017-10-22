@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<rss xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+    <channel>
+        <title>Mobile – TechCrunch</title>
+        <link>https://techcrunch.com</link>
+        <description>Startup and Technology News</description>
+        <lastBuildDate>Sun, 22 Oct 2017 16:48:26 +0000</lastBuildDate>
+        <language>en</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <generator>http://wordpress.com/</generator>
+        <cloud domain="techcrunch.com" port="80" path="/?rsscloud=notify" registerProcedure="" protocol="http-post" />
+        <image>
+            <url>https://secure.gravatar.com/blavatar/d9ea925a71f82f06a1e6224298f7fe80?s=96&amp;d=https%3A%2F%2Fs2.wp.com%2Fi%2Fbuttonw-com.png</url>
+            <title>Mobile – TechCrunch</title>
+            <link>https://techcrunch.com</link>
+        </image>
+        <atom:link rel="search" type="application/opensearchdescription+xml" href="https://techcrunch.com/osd.xml" title="TechCrunch" />
+        <atom10:link
+            xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/Mobilecrunch" />
+        <feedburner:info uri="mobilecrunch" />
+        <atom10:link
+            xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+        <atom10:link
+            xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://techcrunch.com/?pushpress=hub" />
+        <feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly>
+        <item>
+            <title>GitHub’s scandalized ex-CEO returns with Chatterbug</title>
+            <link>https://techcrunch.com/2017/10/21/chatterbug-language-learning/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/21/chatterbug-language-learning/#respond</comments>
+            <pubDate>Sat, 21 Oct 2017 16:47:38 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Josh Constine]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Education]]>
+            </category>
+            <category>
+                <![CDATA[Fundings & Exits]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Personnel]]>
+            </category>
+            <category>
+                <![CDATA[Social]]>
+            </category>
+            <category>
+                <![CDATA[Startups]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Chatterbug]]>
+            </category>
+            <category>
+                <![CDATA[Tom Preston-Werner]]>
+            </category>
+            <category>
+                <![CDATA[language learning]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557588</guid>
+            <description>&lt;img width="680" height="355" src="https://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Translation earbuds might eliminate some utilitarian reasons to know a language, but if you want to understand jokes, read poetry, or fall in love in a foreign tongue, you&amp;#8217;ll have to actually learn it. Unfortunately, products like Rosetta Stone leave people feeling burned after claiming the process should be easy while never helping you practice talking with a real native speaker. You&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/21/chatterbug-language-learning/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=zazMKDTyTXo:pjXN-w4E0iA:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=zazMKDTyTXo:pjXN-w4E0iA:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=zazMKDTyTXo:pjXN-w4E0iA:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=zazMKDTyTXo:pjXN-w4E0iA:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=zazMKDTyTXo:pjXN-w4E0iA:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/21/chatterbug-language-learning/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png" type="image/png" medium="image">
+                <media:title type="html">GitHub%26%238217%3Bs%20scandalized%20ex-CEO%20returns%20with%26nbsp%3BChatterbug</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-preston-werner.png" medium="image">
+                <media:title type="html">Chatterbug Preston-Werner</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/fd3b857e7f0024396cdbd36c4c102a5d?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">joshsc</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-flash-card.png?w=612" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/tom-preston-werner.jpg" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-goals.png?w=680" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-wrong-answer.png?w=680" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-live-lesson1.png?w=680" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/chatterbug-founder-liz-clinkenbeard1.jpg?w=680" medium="image" />
+        </item>
+        <item>
+            <title>Redesigning the TechCrunch app</title>
+            <link>https://techcrunch.com/2017/10/21/redesigning-the-techcrunch-app/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/21/redesigning-the-techcrunch-app/#respond</comments>
+            <pubDate>Sat, 21 Oct 2017 11:00:53 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Angela Medina]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[TechCrunch Mobile]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556339</guid>
+            <description>&lt;img width="680" height="347" src="https://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg?w=1358 1358w, https://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Over the last two years we have been working hard to improve the experience of TechCrunch products for our readers. Our tiny-but-mighty product team launched the brand new TechCrunch mobile app earlier this month and we couldn&amp;#8217;t be more excited. It has been completely redesigned with the goal of giving you easy access to the news you care about most, no matter where you are. &lt;a href="https://techcrunch.com/2017/10/21/redesigning-the-techcrunch-app/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=XGzZ8WbltU8:kFKOgflHqxg:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=XGzZ8WbltU8:kFKOgflHqxg:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=XGzZ8WbltU8:kFKOgflHqxg:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=XGzZ8WbltU8:kFKOgflHqxg:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=XGzZ8WbltU8:kFKOgflHqxg:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/21/redesigning-the-techcrunch-app/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Redesigning%20the%20TechCrunch%26nbsp%3Bapp</media:title>
+            </media:content>
+            <twitter>
+                <![CDATA[ gela_medina ]]>
+            </twitter>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/1-lead-image.jpg" medium="image">
+                <media:title type="html">1. Lead Image</media:title>
+            </media:content>
+            <media:content url="http://1.gravatar.com/avatar/1e86d9c92b3cd6f22f7af2317d348375?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">CP</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/21.png?w=663" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/35.gif?w=462" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/41.gif" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/6.png?w=376" medium="image" />
+        </item>
+        <item>
+            <title>Nike is using its new digital studio to build a community of sneakerheads</title>
+            <link>https://techcrunch.com/2017/10/20/nike-is-using-its-new-digital-studio-to-build-a-community-of-sneakerheads/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/20/nike-is-using-its-new-digital-studio-to-build-a-community-of-sneakerheads/#respond</comments>
+            <pubDate>Fri, 20 Oct 2017 16:00:54 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Anthony Ha]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Advertising Tech]]>
+            </category>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[eCommerce]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Nike]]>
+            </category>
+            <category>
+                <![CDATA[S23NYC]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557510</guid>
+            <description>&lt;img width="680" height="454" src="https://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg?w=680" class="attachment-large size-large wp-post-image" alt="Nike Momofuku" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg?w=768 768w, https://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg 1000w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;A year after acquiring Virgin Mega, Nike is revealing some of the early results of its experiments with augmented reality and community-building. Virgin Mega was a startup backed by Richard Branson&amp;#8217;s Virgin Group that focused on fan communities and shopping. Ron Faris, who led the startup, told me that Nike acquired Virgin Mega in order to explore those same ideas. Since then, the team&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/20/nike-is-using-its-new-digital-studio-to-build-a-community-of-sneakerheads/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Ta6Fbfx__zg:Ki2I_7YTlsc:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=Ta6Fbfx__zg:Ki2I_7YTlsc:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Ta6Fbfx__zg:Ki2I_7YTlsc:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=Ta6Fbfx__zg:Ki2I_7YTlsc:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Ta6Fbfx__zg:Ki2I_7YTlsc:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/20/nike-is-using-its-new-digital-studio-to-build-a-community-of-sneakerheads/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Nike%20is%20using%20its%20new%20digital%20studio%20to%20build%20a%20community%20of%26nbsp%3Bsneakerheads</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/nike-momofuku.jpg" medium="image">
+                <media:title type="html">Nike Momofuku</media:title>
+            </media:content>
+            <media:content url="http://1.gravatar.com/avatar/72b358648f4587cc2a11895c32b8e979?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">anthha</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/snkrs-found-em.jpg?w=680" medium="image">
+                <media:title type="html">SNKRS found em</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>BlackBerry’s KEYone ‘Black Edition’ offers more than just good looks</title>
+            <link>https://techcrunch.com/2017/10/20/blackberrys-keyone-black-edition-offers-more-than-just-good-looks/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/20/blackberrys-keyone-black-edition-offers-more-than-just-good-looks/#respond</comments>
+            <pubDate>Fri, 20 Oct 2017 14:05:57 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Darrell Etherington]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Gadgets]]>
+            </category>
+            <category>
+                <![CDATA[Hardware]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[computing]]>
+            </category>
+            <category>
+                <![CDATA[smartphones]]>
+            </category>
+            <category>
+                <![CDATA[BlackBerry]]>
+            </category>
+            <category>
+                <![CDATA[Software]]>
+            </category>
+            <category>
+                <![CDATA[Android]]>
+            </category>
+            <category>
+                <![CDATA[blackberry keyone]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557499</guid>
+            <description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;BlackBerry&amp;#8217;s most interesting phone in years &amp;#8211; if not an entire decade &amp;#8211; is the KEYone, an Android device with a classic BlackBerry hardware keyboard that finally answers the needs of truly dedicated thumb typists with a modern mobile OS. Now, the KEYone &amp;#8216;Black Edition&amp;#8217; has arrived, and it&amp;#8217;s more than just a fresh coat of paint on an older gadget. In fact,&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/20/blackberrys-keyone-black-edition-offers-more-than-just-good-looks/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=_oARIv_cdPg:9ipFNh8gB00:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=_oARIv_cdPg:9ipFNh8gB00:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=_oARIv_cdPg:9ipFNh8gB00:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=_oARIv_cdPg:9ipFNh8gB00:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=_oARIv_cdPg:9ipFNh8gB00:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/20/blackberrys-keyone-black-edition-offers-more-than-just-good-looks/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">BlackBerry%26%238217%3Bs%20KEYone%20%26%238216%3BBlack%20Edition%26%238217%3B%20offers%20more%20than%20just%20good%26nbsp%3Blooks</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg" medium="image">
+                <media:title type="html">147A9984</media:title>
+            </media:content>
+            <media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">etherin</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/147a9979.jpg?w=150" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/147a9981.jpg?w=150" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/147a9982.jpg?w=150" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/147a9984.jpg?w=150" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/147a9978.jpg?w=100" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/147a9977.jpg?w=150" medium="image" />
+        </item>
+        <item>
+            <title>You can now PayPal friends in Messenger and get help via chat</title>
+            <link>https://techcrunch.com/2017/10/20/you-can-now-paypal-friends-in-messenger-and-get-help-via-chat/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/20/you-can-now-paypal-friends-in-messenger-and-get-help-via-chat/#respond</comments>
+            <pubDate>Fri, 20 Oct 2017 13:00:24 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Sarah Perez]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Finance]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Social]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[PayPal]]>
+            </category>
+            <category>
+                <![CDATA[payments]]>
+            </category>
+            <category>
+                <![CDATA[Messenger]]>
+            </category>
+            <category>
+                <![CDATA[Facebook]]>
+            </category>
+            <category>
+                <![CDATA[messaging]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557190</guid>
+            <description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png 717w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;PayPal users in the U.S. will now be able to send and receive person-to-person payments over Facebook Messenger, the company announced this morning. The deeper integration with Messenger&amp;#8217;s platform, which will also include PayPal&amp;#8217;s first customer service bot for handling customer questions and requests for help, follows a series of tie-ups between the two companies. Last year,&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/20/you-can-now-paypal-friends-in-messenger-and-get-help-via-chat/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=x2NWI90CgHo:0m2i03IGLjU:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=x2NWI90CgHo:0m2i03IGLjU:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=x2NWI90CgHo:0m2i03IGLjU:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=x2NWI90CgHo:0m2i03IGLjU:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=x2NWI90CgHo:0m2i03IGLjU:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/20/you-can-now-paypal-friends-in-messenger-and-get-help-via-chat/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png" type="image/png" medium="image">
+                <media:title type="html">You%20can%20now%20PayPal%20friends%20in%20Messenger%20and%20get%20help%20via%26nbsp%3Bchat</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2016/06/facebook-messenger-payments.png" medium="image">
+                <media:title type="html">facebook-messenger-payments</media:title>
+            </media:content>
+            <media:content url="http://2.gravatar.com/avatar/5225bb627e112543aa03bf3b2958be3f?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">sarahintampa</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2016/10/paypal-messenger.jpg" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/paypal_send-money_allhrz.jpg?w=680" medium="image" />
+        </item>
+        <item>
+            <title>Studio makes running more exciting with coaching, music and competition</title>
+            <link>https://techcrunch.com/2017/10/19/studio-makes-running-more-exciting-with-coaching-music-and-competition/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/studio-makes-running-more-exciting-with-coaching-music-and-competition/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 23:28:17 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Anthony Ha]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Health]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Startups]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[studio]]>
+            </category>
+            <category>
+                <![CDATA[Jason Baptiste]]>
+            </category>
+            <category>
+                <![CDATA[running]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557393</guid>
+            <description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2017/10/studio.png?w=680" class="attachment-large size-large wp-post-image" alt="Studio" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/studio.png?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/studio.png?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/studio.png?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/studio.png?w=768 768w, https://tctechcrunch2011.files.wordpress.com/2017/10/studio.png 1000w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Jason Baptiste wants you to run &amp;#8212; Studio is all about &amp;#8220;turning fitness into entertainment,&amp;#8221; while also making sure you get a good workout. &lt;a href="https://techcrunch.com/2017/10/19/studio-makes-running-more-exciting-with-coaching-music-and-competition/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Djx-lEwwfSQ:LmhqF33kJXQ:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=Djx-lEwwfSQ:LmhqF33kJXQ:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Djx-lEwwfSQ:LmhqF33kJXQ:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=Djx-lEwwfSQ:LmhqF33kJXQ:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Djx-lEwwfSQ:LmhqF33kJXQ:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/studio-makes-running-more-exciting-with-coaching-music-and-competition/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/studio.png?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/studio.png" type="image/png" medium="image">
+                <media:title type="html">Studio%20makes%20running%20more%20exciting%20with%20coaching%2C%20music%20and%26nbsp%3Bcompetition</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/studio.png" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/studio.png" medium="image">
+                <media:title type="html">Studio</media:title>
+            </media:content>
+            <media:content url="http://1.gravatar.com/avatar/72b358648f4587cc2a11895c32b8e979?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">anthha</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>Twitter bans ‘Hateful Display Names’ and shares Safety road map</title>
+            <link>https://techcrunch.com/2017/10/19/twitter-bans-hateful-display-names-and-shares-safety-roadmap/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/twitter-bans-hateful-display-names-and-shares-safety-roadmap/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 22:23:22 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Josh Constine]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Policy]]>
+            </category>
+            <category>
+                <![CDATA[Social]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Twitter]]>
+            </category>
+            <category>
+                <![CDATA[twitter safety]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557378</guid>
+            <description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Twitter has committed to a specific timeline for rolling out changes to its Safety features, and announced new policies, including a ban on hateful display names, and improvements for second-hand &amp;#8220;witness reporting&amp;#8221; of abuse. By January, Twitter plans to have implemented all the abuse changes outlined in the internal email published by Wired earlier this week, as well as the new&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/19/twitter-bans-hateful-display-names-and-shares-safety-roadmap/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=VeHHk29E5Ic:ky3l0JfWD5c:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=VeHHk29E5Ic:ky3l0JfWD5c:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=VeHHk29E5Ic:ky3l0JfWD5c:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=VeHHk29E5Ic:ky3l0JfWD5c:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=VeHHk29E5Ic:ky3l0JfWD5c:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/twitter-bans-hateful-display-names-and-shares-safety-roadmap/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png" type="image/png" medium="image">
+                <media:title type="html">Twitter%20bans%20%26%238216%3BHateful%20Display%20Names%26%238217%3B%20and%20shares%20Safety%20road%26nbsp%3Bmap</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2015/02/twitter-locked.png" medium="image">
+                <media:title type="html">twitter abuse</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/fd3b857e7f0024396cdbd36c4c102a5d?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">joshsc</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/screen-shot-2017-10-19-at-3-20-33-pm.png?w=669" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/screen-shot-2017-10-19-at-3-20-46-pm.png?w=680" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/silence-by-free-speech.png?w=680" medium="image" />
+        </item>
+        <item>
+            <title>What washing dishes, driving a truck and working in a cemetery taught me about the power of ‘blue-collar’ software</title>
+            <link>https://techcrunch.com/2017/10/19/what-washing-dishes-driving-a-truck-and-working-in-a-cemetery-taught-me-about-the-power-of-blue-collar-software/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/what-washing-dishes-driving-a-truck-and-working-in-a-cemetery-taught-me-about-the-power-of-blue-collar-software/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 22:00:49 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Sanjiv Kalevar]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Cloud]]>
+            </category>
+            <category>
+                <![CDATA[Column]]>
+            </category>
+            <category>
+                <![CDATA[Logistics]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Startups]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[procore]]>
+            </category>
+            <category>
+                <![CDATA[workforce management]]>
+            </category>
+            <category>
+                <![CDATA[Quinyx]]>
+            </category>
+            <category>
+                <![CDATA[WhenIWork]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556750</guid>
+            <description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;I work in VC. But it wasn&amp;#8217;t long ago that I stocked shelves, drove a truck, washed dishes, waited tables and even hauled dirt at a cemetery. This isn&amp;#8217;t the usual route to a job in tech and VC, but it opened my eyes to a corner of the tech world I think has the chance to create the next Salesforce, Oracle or LinkedIn: software targeting those who do their jobs outside corporate offices. &lt;a href="https://techcrunch.com/2017/10/19/what-washing-dishes-driving-a-truck-and-working-in-a-cemetery-taught-me-about-the-power-of-blue-collar-software/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=jovaSs_UitE:xXBm8f4ooS0:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=jovaSs_UitE:xXBm8f4ooS0:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=jovaSs_UitE:xXBm8f4ooS0:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=jovaSs_UitE:xXBm8f4ooS0:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=jovaSs_UitE:xXBm8f4ooS0:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/what-washing-dishes-driving-a-truck-and-working-in-a-cemetery-taught-me-about-the-power-of-blue-collar-software/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">What%20washing%20dishes%2C%20driving%20a%20truck%20and%20working%20in%20a%20cemetery%20taught%20me%20about%20the%20power%20of%20%26%238216%3Bblue-collar%26%238217%3B%20software</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/truckdriving.jpg" medium="image">
+                <media:title type="html">Semi-truck driving on dirt road</media:title>
+            </media:content>
+            <media:content url="http://1.gravatar.com/avatar/a9e7d14400af5f9f34b617bf623ce44d?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">davidalanriggs</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>Facebook attacks Pinterest with ‘Sets’ of posts</title>
+            <link>https://techcrunch.com/2017/10/19/facebook-attacks-pinterest-with-sets-of-posts/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/facebook-attacks-pinterest-with-sets-of-posts/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 21:08:37 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Josh Constine]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Social]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Facebook Sets]]>
+            </category>
+            <category>
+                <![CDATA[Facebook]]>
+            </category>
+            <category>
+                <![CDATA[Facebook News Feed]]>
+            </category>
+            <category>
+                <![CDATA[Pinterest]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557315</guid>
+            <description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Identity is prismatic. You show different sides of yourself to different friends in your life. Now Facebook wants to let you share the niches of your interests while stealing thunder from Pinterest&amp;#8217;s boards. Facebook is now testing a feature called Sets that lets you select several status updates, photos or videos and share them as a themed collection to everyone or specific friends. &lt;a href="https://techcrunch.com/2017/10/19/facebook-attacks-pinterest-with-sets-of-posts/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=VEF4nBwWU5k:2sU1VwoEfq0:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=VEF4nBwWU5k:2sU1VwoEfq0:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=VEF4nBwWU5k:2sU1VwoEfq0:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=VEF4nBwWU5k:2sU1VwoEfq0:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=VEF4nBwWU5k:2sU1VwoEfq0:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/facebook-attacks-pinterest-with-sets-of-posts/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Facebook%20attacks%20Pinterest%20with%20%26%238216%3BSets%26%238217%3B%20of%26nbsp%3Bposts</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-pinterest.jpg" medium="image">
+                <media:title type="html">Facebook Headquarters - 1 Hacker Way |</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/fd3b857e7f0024396cdbd36c4c102a5d?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">joshsc</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets.jpg?w=680" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/add-to-facebook-set.jpg?w=382" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/facebook-sets-privacy.jpg" medium="image" />
+        </item>
+        <item>
+            <title>Apple’s enterprise strategy begins to take shape</title>
+            <link>https://techcrunch.com/2017/10/19/apples-enterprise-strategy-begins-to-take-shape/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/apples-enterprise-strategy-begins-to-take-shape/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 19:26:41 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Ron Miller]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Developer]]>
+            </category>
+            <category>
+                <![CDATA[Enterprise]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Apple]]>
+            </category>
+            <category>
+                <![CDATA[iPad]]>
+            </category>
+            <category>
+                <![CDATA[iPhone]]>
+            </category>
+            <category>
+                <![CDATA[iOS]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557236</guid>
+            <description>&lt;img width="680" height="460" src="https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg?w=768 768w, https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg 1024w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;When Apple announced its partnership with GE this week, it would have been easy to dismiss it as another random collaboration from a company people don&amp;#8217;t generally associate with the enterprise. After all, Apple killed off their enterprise server product years ago. You might rightly ask, what exactly do they have to do with the enterprise these days? But if you consider the notion of&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/19/apples-enterprise-strategy-begins-to-take-shape/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=INMRcEfq_Hk:WqQGm_pNjB8:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=INMRcEfq_Hk:WqQGm_pNjB8:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=INMRcEfq_Hk:WqQGm_pNjB8:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=INMRcEfq_Hk:WqQGm_pNjB8:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=INMRcEfq_Hk:WqQGm_pNjB8:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/apples-enterprise-strategy-begins-to-take-shape/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Apple%26%238217%3Bs%20enterprise%20strategy%20begins%20to%20take%26nbsp%3Bshape</media:title>
+            </media:content>
+            <twitter>
+                <![CDATA[ ron_miller ]]>
+            </twitter>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-846159820.jpg" medium="image">
+                <media:title type="html">Apple Holds Product Launch Event At New Campus In Cupertino</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/0b82cfe9f0e15c08c5816481c9f383d9?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">ronjourn</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>Two Google alums just raised $60M to rethink documents</title>
+            <link>https://techcrunch.com/2017/10/19/two-google-alums-just-raised-60m-to-rethink-documents/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/two-google-alums-just-raised-60m-to-rethink-documents/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 17:22:02 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Matthew Lynley]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Enterprise]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Startups]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[google sheets]]>
+            </category>
+            <category>
+                <![CDATA[Dropbox Paper]]>
+            </category>
+            <category>
+                <![CDATA[coda]]>
+            </category>
+            <category>
+                <![CDATA[google-docs]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557123</guid>
+            <description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;When you open a Google doc or a spreadsheet, you get a blank spreadsheet and some documentation as to what you can do with it &amp;#8212; and that&amp;#8217;s pretty much where we&amp;#8217;ve been for quite some time. But two MIT graduates, coming in from Microsoft and Google, have built up a team that for the past three years has quietly been trying to rethink how we approach documents. CEO Shishir&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/19/two-google-alums-just-raised-60m-to-rethink-documents/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=G0KtqeQhj1o:YBOADc2Lcho:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=G0KtqeQhj1o:YBOADc2Lcho:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=G0KtqeQhj1o:YBOADc2Lcho:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=G0KtqeQhj1o:YBOADc2Lcho:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=G0KtqeQhj1o:YBOADc2Lcho:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/two-google-alums-just-raised-60m-to-rethink-documents/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Two%20Google%20alums%20just%20raised%20%2460M%20to%20rethink%26nbsp%3Bdocuments</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/gettyimages-601035416.jpg" medium="image">
+                <media:title type="html">Flying paper on dark background</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/fb80ccc18c4fecace4405aebe8fbedbc?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">matthewlynley</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/multiple-views-same-data.gif" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/examples-small.gif" medium="image" />
+        </item>
+        <item>
+            <title>Facebook Messenger lets games monetize with purchases and ads</title>
+            <link>https://techcrunch.com/2017/10/19/facebook-messenger-game-ads-in-app-purchases/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/facebook-messenger-game-ads-in-app-purchases/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 17:04:54 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Josh Constine]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Advertising Tech]]>
+            </category>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Gaming]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Social]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Facebook]]>
+            </category>
+            <category>
+                <![CDATA[facebook messenger]]>
+            </category>
+            <category>
+                <![CDATA[Facebook Messenger Instant Games]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557125</guid>
+            <description>&lt;img width="680" height="356" src="https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Facebook is finally giving developers a reason to build games for Messenger while also opening a new revenue stream for the chat app. After launching HTML5 &amp;#8216;Instant Games&amp;#8217; inside Messenger, like Pac-Man, Space Invaders and Words With Friends Frenzy in November 2016, today Facebook is allowing developers to add in-app purchases as well as interstitial and rewarded video ads. &lt;a href="https://techcrunch.com/2017/10/19/facebook-messenger-game-ads-in-app-purchases/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=GUAMJ6jhG6A:gJaNYvP60SU:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=GUAMJ6jhG6A:gJaNYvP60SU:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=GUAMJ6jhG6A:gJaNYvP60SU:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=GUAMJ6jhG6A:gJaNYvP60SU:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=GUAMJ6jhG6A:gJaNYvP60SU:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/facebook-messenger-game-ads-in-app-purchases/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png" type="image/png" medium="image">
+                <media:title type="html">Facebook%20Messenger%20lets%20games%20monetize%20with%20purchases%20and%26nbsp%3Bads</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/facebook-messenger-instant-games-monetization.png" medium="image">
+                <media:title type="html">Facebook Messenger Instant Games Monetization</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/fd3b857e7f0024396cdbd36c4c102a5d?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">joshsc</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/basketball-frvr_interstitial-ad.png?w=680" medium="image" />
+        </item>
+        <item>
+            <title>Google Play adds Android Instant Apps via a ‘Try it Now’ button, among other changes</title>
+            <link>https://techcrunch.com/2017/10/19/google-play-adds-android-instant-apps-via-a-try-it-now-button-among-other-changes/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/google-play-adds-android-instant-apps-via-a-try-it-now-button-among-other-changes/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 17:00:27 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Sarah Perez]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Google Play]]>
+            </category>
+            <category>
+                <![CDATA[Google]]>
+            </category>
+            <category>
+                <![CDATA[android apps]]>
+            </category>
+            <category>
+                <![CDATA[play store]]>
+            </category>
+            <category>
+                <![CDATA[developers]]>
+            </category>
+            <category>
+                <![CDATA[instant apps]]>
+            </category>
+            <category>
+                <![CDATA[Android]]>
+            </category>
+            <category>
+                <![CDATA[google play console]]>
+            </category>
+            <category>
+                <![CDATA[Android developers]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1557051</guid>
+            <description>&lt;img width="680" height="510" src="https://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Google today is announcing a number of changes to its Google Play app store, the most notable being a new way to try apps immediately without having to first install them on your mobile device. The new feature takes advantage of &amp;#8220;Android Instant Apps&amp;#8221; technology &amp;#8211; Google&amp;#8217;s attempt at bridging the mobile web world with that of native applications. Instant Apps were&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/19/google-play-adds-android-instant-apps-via-a-try-it-now-button-among-other-changes/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=gh2IdIkjuSk:I-YPti_8Bk0:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=gh2IdIkjuSk:I-YPti_8Bk0:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=gh2IdIkjuSk:I-YPti_8Bk0:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=gh2IdIkjuSk:I-YPti_8Bk0:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=gh2IdIkjuSk:I-YPti_8Bk0:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/google-play-adds-android-instant-apps-via-a-try-it-now-button-among-other-changes/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg" type="image/jpeg" medium="image">
+                <media:title type="html">Google%20Play%20adds%20Android%20Instant%20Apps%20via%20a%20%26%238216%3BTry%20it%20Now%E2%80%99%20button%2C%20among%20other%26nbsp%3Bchanges</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/android-instant-apps.jpeg" medium="image">
+                <media:title type="html">android instant apps</media:title>
+            </media:content>
+            <media:content url="http://2.gravatar.com/avatar/5225bb627e112543aa03bf3b2958be3f?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">sarahintampa</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/games_home.png?w=368" medium="image" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/vitals-dashboard.png?w=680" medium="image" />
+        </item>
+        <item>
+            <title>Snaps raises $6M to expand its marketing platform for messaging apps</title>
+            <link>https://techcrunch.com/2017/10/19/snaps-series-a/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/snaps-series-a/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 14:22:35 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Anthony Ha]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Advertising Tech]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Startups]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[snaps]]>
+            </category>
+            <category>
+                <![CDATA[signal-peak-ventures]]>
+            </category>
+            <category>
+                <![CDATA[chatbots]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556984</guid>
+            <description>&lt;img width="680" height="557" src="https://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Snaps has raised $6 million in Series A funding for what it calls its Conversational Marketing Cloud.
+                By that, it&amp;#8217;s referring to a suite of tools that allows businesses to promote themselves through messaging. CEO Christian Brucculeri said Snaps is differentiated by its &amp;#8220;write once and deploy everywhere approach,&amp;#8221; allowing marketers to build things like chatbots and emoji&amp;#8230; &lt;a href="https://techcrunch.com/2017/10/19/snaps-series-a/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=nakPZ7mZwzE:gG-_5wEOG9Q:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=nakPZ7mZwzE:gG-_5wEOG9Q:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=nakPZ7mZwzE:gG-_5wEOG9Q:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=nakPZ7mZwzE:gG-_5wEOG9Q:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=nakPZ7mZwzE:gG-_5wEOG9Q:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/snaps-series-a/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Snaps%20raises%20%246M%20to%20expand%20its%20marketing%20platform%20for%20messaging%26nbsp%3Bapps</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2015/10/messaging-e1445961176610.jpg" medium="image">
+                <media:title type="html">messaging</media:title>
+            </media:content>
+            <media:content url="http://1.gravatar.com/avatar/72b358648f4587cc2a11895c32b8e979?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">anthha</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/retail_stylebot_gif.gif?w=680" medium="image">
+                <media:title type="html">Nike Stylebot</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>Hiya, a Whitepages spinout, nabs $18M for its smart caller ID technology</title>
+            <link>https://techcrunch.com/2017/10/19/hiya-a-whitepages-spinout-nabs-18m-to-for-its-smart-caller-id-technology/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/19/hiya-a-whitepages-spinout-nabs-18m-to-for-its-smart-caller-id-technology/#respond</comments>
+            <pubDate>Thu, 19 Oct 2017 07:24:09 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Ingrid Lunden]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Europe]]>
+            </category>
+            <category>
+                <![CDATA[Fundings & Exits]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[hiya]]>
+            </category>
+            <category>
+                <![CDATA[WhitePages]]>
+            </category>
+            <category>
+                <![CDATA[caller id]]>
+            </category>
+            <category>
+                <![CDATA[Balderton Capital]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556921</guid>
+            <description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Hiya came to life a year ago when it was spun out by Whitepages to take on TrueCaller and others in the world of smart caller ID services. Using machine learning analytics on a vast database of calling data (3.5 billion calls to date), Seattle-based Hiya&amp;#8217;s mission has been to supercharge the humble phone call &amp;#8212; by providing detailed information about who is calling you, whether&amp;#8230; &lt;a href="https://techcrunch.com/2017/10/19/hiya-a-whitepages-spinout-nabs-18m-to-for-its-smart-caller-id-technology/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=i_bt8cYVGBo:XPg5u0sTs38:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=i_bt8cYVGBo:XPg5u0sTs38:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=i_bt8cYVGBo:XPg5u0sTs38:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=i_bt8cYVGBo:XPg5u0sTs38:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=i_bt8cYVGBo:XPg5u0sTs38:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/19/hiya-a-whitepages-spinout-nabs-18m-to-for-its-smart-caller-id-technology/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Hiya%2C%20a%20Whitepages%20spinout%2C%20nabs%20%2418M%20for%20its%20smart%20caller%20ID%26nbsp%3Btechnology</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/hiya-screens.jpg" medium="image">
+                <media:title type="html">hiya-screens</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/6648ec93043f0f368091adece63c6d52?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">ingridlunden</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>Truffle now lets you share your food tips via iMessage</title>
+            <link>https://techcrunch.com/2017/10/18/truffle-imessage/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/18/truffle-imessage/#respond</comments>
+            <pubDate>Wed, 18 Oct 2017 22:28:22 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Anthony Ha]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Social]]>
+            </category>
+            <category>
+                <![CDATA[Startups]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Truffle]]>
+            </category>
+            <category>
+                <![CDATA[Tom Limongello]]>
+            </category>
+            <category>
+                <![CDATA[imessage]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556856</guid>
+            <description>&lt;img width="640" height="432" src="https://tctechcrunch2011.files.wordpress.com/2014/07/restaurant.jpg?w=640" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2014/07/restaurant.jpg 640w, https://tctechcrunch2011.files.wordpress.com/2014/07/restaurant.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2014/07/restaurant.jpg?w=300 300w" sizes="(max-width: 640px) 100vw, 640px" /&gt;&amp;nbsp;While you&amp;#8217;ve already got Yelp and other apps to help you figure out where to eat, Truffle is designed specifically for sharing recommendations with friends and other people you know. A new update should make that sharing even easier. The big addition is an iMessage app, which means (you guessed it) that Truffle is now integrated with iMessage. &lt;a href="https://techcrunch.com/2017/10/18/truffle-imessage/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Yd1PsjSIFGM:C5HwDo_9_30:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=Yd1PsjSIFGM:C5HwDo_9_30:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Yd1PsjSIFGM:C5HwDo_9_30:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=Yd1PsjSIFGM:C5HwDo_9_30:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=Yd1PsjSIFGM:C5HwDo_9_30:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/18/truffle-imessage/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/07/restaurant.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2014/07/restaurant.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Truffle%20now%20lets%20you%20share%20your%20food%20tips%20via%26nbsp%3BiMessage</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/07/restaurant.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2014/07/restaurant.jpg" medium="image">
+                <media:title type="html">Restaurant</media:title>
+            </media:content>
+            <media:content url="http://1.gravatar.com/avatar/72b358648f4587cc2a11895c32b8e979?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">anthha</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/appstore_5-5in_6.png?w=383" medium="image">
+                <media:title type="html">Truffle iMessage</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>Blue Apron is laying off hundreds of employees</title>
+            <link>https://techcrunch.com/2017/10/18/blue-apron-is-laying-off-6-of-its-staff/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/18/blue-apron-is-laying-off-6-of-its-staff/#respond</comments>
+            <pubDate>Wed, 18 Oct 2017 21:49:55 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Matthew Lynley]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[finance]]>
+            </category>
+            <category>
+                <![CDATA[layoffs]]>
+            </category>
+            <category>
+                <![CDATA[Blue Apron]]>
+            </category>
+            <category>
+                <![CDATA[HelloFresh]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556850</guid>
+            <description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;As Blue Apron approaches its next earnings report in a couple of weeks, the company said Wednesday that it is laying off 6 percent of its staff as part of &amp;#8220;a company-wide realignment of personnel to support its strategic priorities.&amp;#8221; Blue Apron was one of the big &amp;#8212; and most anticipated &amp;#8212; consumer IPOs of the year, but it&amp;#8217;s also now one of the companies that&amp;#8230; &lt;a href="https://techcrunch.com/2017/10/18/blue-apron-is-laying-off-6-of-its-staff/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=wfa0Coxu4e8:JSpd1syLaYc:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=wfa0Coxu4e8:JSpd1syLaYc:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=wfa0Coxu4e8:JSpd1syLaYc:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=wfa0Coxu4e8:JSpd1syLaYc:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=wfa0Coxu4e8:JSpd1syLaYc:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/18/blue-apron-is-laying-off-6-of-its-staff/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Blue%20Apron%20is%20laying%20off%20hundreds%20of%26nbsp%3Bemployees</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2014/09/matt-salzberg.jpg" medium="image">
+                <media:title type="html">matt-salzberg</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/fb80ccc18c4fecace4405aebe8fbedbc?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">matthewlynley</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>eBay is having a pretty bad day</title>
+            <link>https://techcrunch.com/2017/10/18/ebay-is-having-a-pretty-bad-day/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/18/ebay-is-having-a-pretty-bad-day/#respond</comments>
+            <pubDate>Wed, 18 Oct 2017 20:37:28 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Matthew Lynley]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[Startups]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[earnings]]>
+            </category>
+            <category>
+                <![CDATA[eBay]]>
+            </category>
+            <category>
+                <![CDATA[finance]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556748</guid>
+            <description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;eBay is not having a great afternoon after posting a pretty ho-hum third quarter that fit roughly in line with analyst estimates, but perhaps not seeing the kinds of leaps that Wall Street is looking for heading into the fourth quarter. The company said it added an additional 2 million active buyers and now says it has 168 million global active buyers. But even with buyer numbers as large as&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/18/ebay-is-having-a-pretty-bad-day/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=LxyutUvthMc:PJbxK4jiZg4:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=LxyutUvthMc:PJbxK4jiZg4:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=LxyutUvthMc:PJbxK4jiZg4:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=LxyutUvthMc:PJbxK4jiZg4:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=LxyutUvthMc:PJbxK4jiZg4:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/18/ebay-is-having-a-pretty-bad-day/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">eBay%20is%20having%20a%20pretty%20bad%26nbsp%3Bday</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/04/ebay-berlin.jpg" medium="image">
+                <media:title type="html">eBay-Berlin</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/fb80ccc18c4fecace4405aebe8fbedbc?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">matthewlynley</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>Gmail launches its first public iOS beta to test support for third-party accounts</title>
+            <link>https://techcrunch.com/2017/10/18/gmail-launches-its-first-public-ios-beta-to-test-support-for-third-party-accounts/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/18/gmail-launches-its-first-public-ios-beta-to-test-support-for-third-party-accounts/#respond</comments>
+            <pubDate>Wed, 18 Oct 2017 16:52:36 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Sarah Perez]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Apps]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Google]]>
+            </category>
+            <category>
+                <![CDATA[gmail]]>
+            </category>
+            <category>
+                <![CDATA[iOS apps]]>
+            </category>
+            <category>
+                <![CDATA[email]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556673</guid>
+            <description>&lt;img width="680" height="382" src="https://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg?w=1360 1360w, https://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg?w=768 768w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;Google wants to make Gmail the place where you check all your email accounts, not just your Google accounts. The company announced this week it&amp;#8217;s testing a new version of the Gmail app on iOS that will allow users to add their non-Google accounts, including those from Outlook (including Hotmail or Live), Yahoo, and elsewhere. The announcement, which was sent out via a tweet from the&amp;hellip; &lt;a href="https://techcrunch.com/2017/10/18/gmail-launches-its-first-public-ios-beta-to-test-support-for-third-party-accounts/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=pO3ddfMPGcc:zP9uXBd5geE:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=pO3ddfMPGcc:zP9uXBd5geE:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=pO3ddfMPGcc:zP9uXBd5geE:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=pO3ddfMPGcc:zP9uXBd5geE:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=pO3ddfMPGcc:zP9uXBd5geE:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/18/gmail-launches-its-first-public-ios-beta-to-test-support-for-third-party-accounts/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">Gmail%20launches%20its%20first%20public%20iOS%20beta%20to%20test%20support%20for%20third-party%26nbsp%3Baccounts</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/gmail-app-icon-ios.jpg" medium="image">
+                <media:title type="html">gmail-app-icon-ios</media:title>
+            </media:content>
+            <media:content url="http://2.gravatar.com/avatar/5225bb627e112543aa03bf3b2958be3f?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">sarahintampa</media:title>
+            </media:content>
+        </item>
+        <item>
+            <title>The Moto Z gets its very own Alexa smart speaker</title>
+            <link>https://techcrunch.com/2017/10/18/the-moto-z-gets-its-very-own-alexa-smart-speaker/?ncid=rss</link>
+            <comments>https://techcrunch.com/2017/10/18/the-moto-z-gets-its-very-own-alexa-smart-speaker/#respond</comments>
+            <pubDate>Wed, 18 Oct 2017 14:38:34 +0000</pubDate>
+            <dc:creator>
+                <![CDATA[Brian Heater]]>
+            </dc:creator>
+            <category>
+                <![CDATA[Gaming]]>
+            </category>
+            <category>
+                <![CDATA[Hardware]]>
+            </category>
+            <category>
+                <![CDATA[Mobile]]>
+            </category>
+            <category>
+                <![CDATA[TC]]>
+            </category>
+            <category>
+                <![CDATA[Motorola]]>
+            </category>
+            <category>
+                <![CDATA[moto z]]>
+            </category>
+            <category>
+                <![CDATA[Amazon]]>
+            </category>
+            <category>
+                <![CDATA[Alexa]]>
+            </category>
+            <category>
+                <![CDATA[amazon alexa]]>
+            </category>
+            <guid isPermaLink="false">http://techcrunch.com/?p=1556580</guid>
+            <description>&lt;img width="680" height="311" src="https://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg?w=680" class="attachment-large size-large wp-post-image" alt="" srcset="https://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg?w=680 680w, https://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg?w=150 150w, https://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg?w=300 300w, https://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg?w=768 768w, https://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg 800w" sizes="(max-width: 680px) 100vw, 680px" /&gt;&amp;nbsp;It was just a matter of time, really. Motorola&amp;#8217;s been teasing Alexa integration since Mobile World Congress in February. Back then, the company previewed a sort of &amp;#8220;experimental&amp;#8221; Mod for the Moto Z sporting Amazon&amp;#8217;s insanely popular smart assistant. The add-on is finally really real and set to start shipping next month.
+                The AI has already slowly made its way onto a&amp;#8230; &lt;a href="https://techcrunch.com/2017/10/18/the-moto-z-gets-its-very-own-alexa-smart-speaker/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;div class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=J5wQ5GLZPVE:N2MvEvjyW8c:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=J5wQ5GLZPVE:N2MvEvjyW8c:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=J5wQ5GLZPVE:N2MvEvjyW8c:F7zBnMyn0Lo"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?i=J5wQ5GLZPVE:N2MvEvjyW8c:F7zBnMyn0Lo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/Mobilecrunch?a=J5wQ5GLZPVE:N2MvEvjyW8c:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/Mobilecrunch?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;</description>
+            <wfw:commentRss>https://techcrunch.com/2017/10/18/the-moto-z-gets-its-very-own-alexa-smart-speaker/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg?w=210&amp;h=158&amp;crop=1" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg" type="image/jpeg" medium="image">
+                <media:title type="html">The%20Moto%20Z%20gets%20its%20very%20own%20Alexa%20smart%26nbsp%3Bspeaker</media:title>
+            </media:content>
+            <media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg" />
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_laydown_motoz2force.jpg" medium="image">
+                <media:title type="html">null</media:title>
+            </media:content>
+            <media:content url="http://0.gravatar.com/avatar/69b6dc548d05dedd0132f12e075bf7de?s=96&amp;d=identicon&amp;r=G" medium="image">
+                <media:title type="html">bheater</media:title>
+            </media:content>
+            <media:content url="http://tctechcrunch2011.files.wordpress.com/2017/10/moto-mods_alexa_frontback_motoz2force.jpg" medium="image" />
+        </item>
+    </channel>
+</rss>
