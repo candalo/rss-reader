@@ -10,7 +10,7 @@ jacocoAndroidUnitTestReport {
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.github.rssreader"
         minSdkVersion 19
@@ -29,7 +29,7 @@ android {
 }
 
 ext {
-    supportLibraryVersion = '26.0.1'
+    supportLibraryVersion = '26.1.0'
     constraintLayoutVersion = '1.0.2'
     expressoVersion = '2.2.2'
     junitVersion = '4.12'
