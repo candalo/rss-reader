@@ -15,4 +15,5 @@ class Subscribe(subscriberThread: Thread,
 
     override fun getObservable(params: FeedSubscription): Observable<FeedChannel> =
             feedSubscriptionRepository.create(params)
+            // TODO: Save the feedChannel in some way
 }
