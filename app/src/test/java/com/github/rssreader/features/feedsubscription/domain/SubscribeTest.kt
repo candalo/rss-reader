@@ -26,7 +26,7 @@ class SubscribeTest {
     }
 
     private lateinit var subscribeUseCase: Subscribe
-    private var feedSubscriptionTestObserver = TestObserver<FeedChannel>()
+    private var feedSubscriptionTestObserver = TestObserver<Void>()
     private var testScheduler = TestScheduler()
 
     @Mock private lateinit var subscriberThread: Thread
@@ -42,10 +42,9 @@ class SubscribeTest {
     }
 
     @Test
-    fun execute_validFeedUrl_willReturnFeed() {
-        val feedObservable = Observable.just(feed)
-        given { feedSubscriptionRepository.create(FeedSubscription(VALID_FEED_URL)) }
-                .willReturn(feedObservable)
+    fun execute_validFeedUrl_willReturnEmptyObservable() {
+        val observable = Observable.empty<Void>()
+        given { feedSubscriptionRepository.create(FeedSubscription(VALID_FEED_URL)) }.willReturn(observable)
 
         subscribeUseCase = Subscribe(subscriberThread, observerThread, feedSubscriptionRepository)
         subscribeUseCase.execute(feedSubscriptionTestObserver, FeedSubscription(VALID_FEED_URL))
@@ -54,7 +53,6 @@ class SubscribeTest {
 
         testScheduler.advanceTimeTo(1, TimeUnit.SECONDS)
 
-        feedSubscriptionTestObserver.assertValue(feed)
         feedSubscriptionTestObserver.assertComplete()
         feedSubscriptionTestObserver.assertNoErrors()
     }

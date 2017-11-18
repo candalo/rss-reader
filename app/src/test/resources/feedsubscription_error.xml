@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <soap:Fault>
+            <faultcode>feedvalidator.logging.ValidationFailure</faultcode>
+            <faultstring>
+                <feedvalidator.logging.ValidationFailure instance at 0x7f7708a8d0e0>
+            </faultstring>
+            <detail>
+                <traceback xmlns="http://www.python.org/doc/current/lib/module-traceback.html">
+                    Traceback (most recent call last):
+                    File &quot;/usr/local/feedvalidator/check.cgi&quot;, line 182, in checker_app
+                    params = feedvalidator.validateURL(url, firstOccurrenceOnly=1, wantRawData=1)
+                    File &quot;/usr/local/feedvalidator/src/feedvalidator/__init__.py&quot;, line 211, in validateURL
+                    raise ValidationFailure(logging.HttpError({&apos;status&apos;: status}))
+                    ValidationFailure: &lt;feedvalidator.logging.ValidationFailure instance at 0x7f7708a8d0e0&gt;
+
+                </traceback>
+            </detail>
+        </soap:Fault>
+    </soap:Body>
+</soap:Envelope>

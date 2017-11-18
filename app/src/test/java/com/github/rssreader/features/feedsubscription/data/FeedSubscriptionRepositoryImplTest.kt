@@ -1,15 +1,10 @@
 package com.github.rssreader.features.feedsubscription.data
 
-import com.github.rssreader.base.data.entity.mapper.Mapper
 import com.github.rssreader.base.domain.Thread
-import com.github.rssreader.features.feed.data.entity.FeedChannelEntity
-import com.github.rssreader.features.feed.domain.models.FeedChannel
 import com.github.rssreader.features.feedsubscription.data.repository.FeedSubscriptionRepositoryImpl
-import com.github.rssreader.features.feedsubscription.data.repository.datasource.FeedSubscriptionDataStore
-import com.github.rssreader.features.feedsubscription.data.repository.datasource.FeedSubscriptionDataStoreFactory
+import com.github.rssreader.features.feedsubscription.data.repository.datasource.network.CloudFeedSubscriptionDataSource
 import com.github.rssreader.features.feedsubscription.domain.InvalidFeedSubscriptionException
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
-import com.github.rssreader.features.feedsubscription.domain.repository.FeedSubscriptionRepository
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.given
 import io.reactivex.Observable
@@ -29,31 +24,25 @@ class FeedSubscriptionRepositoryImplTest {
         const val INVALID_FEED_URL = "https://invalid-url-feed.com"
     }
 
-    private val testObserver = TestObserver<FeedChannel>()
+    private val testObserver = TestObserver<Void>()
     private val testScheduler = TestScheduler()
-    private lateinit var repository : FeedSubscriptionRepository
+    private lateinit var repository: FeedSubscriptionRepositoryImpl
 
-    @Mock private lateinit var dataStoreFactory: FeedSubscriptionDataStoreFactory
-    @Mock private lateinit var dataStore: FeedSubscriptionDataStore
-    @Mock private lateinit var dataMapper: Mapper<FeedChannel, FeedChannelEntity>
+    @Mock private lateinit var cloudFeedSubscriptionDataSource: CloudFeedSubscriptionDataSource
     @Mock private lateinit var thread: Thread
-    @Mock private lateinit var feed: FeedChannel
-    @Mock private lateinit var feedEntity: FeedChannelEntity
 
     @Before
     fun init() {
         MockitoAnnotations.initMocks(this)
 
         given { thread.get() }.willReturn(testScheduler)
-        given { dataMapper.transformToDomainModel(feedEntity)}.willReturn(Observable.just(feed))
 
-        repository = FeedSubscriptionRepositoryImpl(dataStoreFactory, dataMapper)
+        repository = FeedSubscriptionRepositoryImpl(cloudFeedSubscriptionDataSource)
     }
 
     @Test
-    fun create_validFeedSubscription_willReturnFeed() {
-        given { dataStore.create(any<FeedSubscription>())}.willReturn(Observable.just(feedEntity))
-        given { dataStoreFactory.create()}.willReturn(Observable.just(dataStore))
+    fun create_validFeedSubscription_willReturnEmptyObservable() {
+        given { cloudFeedSubscriptionDataSource.create(any<FeedSubscription>()) }.willReturn(Observable.empty())
 
         val feedSubscription = FeedSubscription(VALID_FEED_URL)
 
@@ -65,7 +54,6 @@ class FeedSubscriptionRepositoryImplTest {
 
         testScheduler.advanceTimeTo(1, TimeUnit.SECONDS)
 
-        testObserver.assertValue(feed)
         testObserver.assertComplete()
         testObserver.assertNoErrors()
     }
@@ -73,8 +61,7 @@ class FeedSubscriptionRepositoryImplTest {
     @Test
     fun create_invalidFeedSubscription_willReturnError() {
         val exception = InvalidFeedSubscriptionException()
-        given { dataStore.create(any<FeedSubscription>())}.willReturn(Observable.error(exception))
-        given { dataStoreFactory.create()}.willReturn(Observable.just(dataStore))
+        given { cloudFeedSubscriptionDataSource.create(any<FeedSubscription>()) }.willReturn(Observable.error(exception))
 
         val feedSubscription = FeedSubscription(INVALID_FEED_URL)
 
