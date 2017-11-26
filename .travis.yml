@@ -22,7 +22,7 @@ android:
     - android-22
     - android-26
     - platform-tools
-    - build-tools-26.0.1
+    - build-tools-26.0.2
     - extra-android-m2repository
     - extra-google-m2repository
     - sys-img-armeabi-v7a-android-22
@@ -52,7 +52,7 @@ cache:
 before_deploy:
   - cp $TRAVIS_BUILD_DIR/.jks $HOME
   - jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 $HOME/android/release-unsigned.apk rss-reader -keystore $HOME/.jks -storepass $storepass -keypass $keypass
-  - "${ANDROID_HOME}/build-tools/26.0.1/zipalign 4 $HOME/android/release-unsigned.apk $HOME/android/rss-reader.apk"
+  - "${ANDROID_HOME}/build-tools/26.0.2/zipalign 4 $HOME/android/release-unsigned.apk $HOME/android/rss-reader.apk"
 
 deploy:
   provider: releases

@@ -10,10 +10,7 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
 import org.mockito.MockitoAnnotations
-import java.text.SimpleDateFormat
-import java.util.*
 import java.util.concurrent.TimeUnit
-import kotlin.collections.ArrayList
 
 
 class FeedItemMapperImplTest {
@@ -35,16 +32,13 @@ class FeedItemMapperImplTest {
 
     @Test
     fun transformToEntity_completeDomainModel_willReturnEntityObservable() {
-        val date = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-
         val feedItem = FeedItem(
                 "title",
                 "link",
                 "description",
                 "authorEmail",
-                "category",
-                "commentsLink",
-                date
+                listOf("category"),
+                "pubDate"
         )
 
         val mapper = FeedItemMapperImpl()
@@ -60,9 +54,8 @@ class FeedItemMapperImplTest {
                 "link",
                 "description",
                 "authorEmail",
-                "category",
-                "commentsLink",
-                date
+                listOf("category"),
+                "pubDate"
         )
 
         testScheduler.advanceTimeBy(1, TimeUnit.SECONDS)
@@ -97,16 +90,13 @@ class FeedItemMapperImplTest {
 
     @Test
     fun transformToDomainModel_completeEntityModel_willReturnDomainModelObservable() {
-        val date = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-
         val feedItemEntity = FeedItemEntity(
                 "title",
                 "link",
                 "description",
                 "authorEmail",
-                "category",
-                "commentsLink",
-                date
+                listOf("category"),
+                "pubDate"
         )
 
         val mapper = FeedItemMapperImpl()
@@ -122,9 +112,8 @@ class FeedItemMapperImplTest {
                 "link",
                 "description",
                 "authorEmail",
-                "category",
-                "commentsLink",
-                date
+                listOf("category"),
+                "pubDate"
         )
 
         testScheduler.advanceTimeBy(1, TimeUnit.SECONDS)
@@ -159,16 +148,13 @@ class FeedItemMapperImplTest {
 
     @Test
     fun transformToEntityList_completeDomainModelList_willReturnEntityListObservable() {
-        val date = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-
         val feedItem = FeedItem(
                 "title",
                 "link",
                 "description",
                 "authorEmail",
-                "category",
-                "commentsLink",
-                date
+                listOf("category"),
+                "pubDate"
         )
         val feedItemList = arrayListOf(feedItem)
 
@@ -185,9 +171,8 @@ class FeedItemMapperImplTest {
                 "link",
                 "description",
                 "authorEmail",
-                "category",
-                "commentsLink",
-                date
+                listOf("category"),
+                "pubDate"
         )
         val feedItemEntityList = arrayListOf(feedItemEntity)
 
@@ -246,16 +231,13 @@ class FeedItemMapperImplTest {
 
     @Test
     fun transformToDomainModelList_completeDomainModelList_willReturnEntityListObservable() {
-        val date = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-
         val feedItemEntity = FeedItemEntity(
                 "title",
                 "link",
                 "description",
                 "authorEmail",
-                "category",
-                "commentsLink",
-                date
+                listOf("category"),
+                "pubDate"
         )
         val feedItemEntityList = arrayListOf(feedItemEntity)
 
@@ -272,9 +254,8 @@ class FeedItemMapperImplTest {
                 "link",
                 "description",
                 "authorEmail",
-                "category",
-                "commentsLink",
-                date
+                listOf("category"),
+                "pubDate"
         )
         val feedItemList = arrayListOf(feedItem)
 

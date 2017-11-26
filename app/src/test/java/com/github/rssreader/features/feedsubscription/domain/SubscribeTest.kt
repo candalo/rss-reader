@@ -1,7 +1,7 @@
 package com.github.rssreader.features.feedsubscription.domain
 
 import com.github.rssreader.base.domain.Thread
-import com.github.rssreader.features.feed.domain.models.Feed
+import com.github.rssreader.features.feed.domain.models.FeedChannel
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
 import com.github.rssreader.features.feedsubscription.domain.repository.FeedSubscriptionRepository
 import com.github.rssreader.features.feedsubscription.domain.usecases.Subscribe
@@ -26,13 +26,13 @@ class SubscribeTest {
     }
 
     private lateinit var subscribeUseCase: Subscribe
-    private var feedSubscriptionTestObserver = TestObserver<Feed>()
+    private var feedSubscriptionTestObserver = TestObserver<Void>()
     private var testScheduler = TestScheduler()
 
     @Mock private lateinit var subscriberThread: Thread
     @Mock private lateinit var observerThread: Thread
     @Mock private lateinit var feedSubscriptionRepository: FeedSubscriptionRepository
-    @Mock private lateinit var feed: Feed
+    @Mock private lateinit var feed: FeedChannel
 
     @Before
     fun init() {
@@ -42,10 +42,9 @@ class SubscribeTest {
     }
 
     @Test
-    fun execute_validFeedUrl_willReturnFeed() {
-        val feedObservable = Observable.just(feed)
-        given { feedSubscriptionRepository.create(FeedSubscription(VALID_FEED_URL)) }
-                .willReturn(feedObservable)
+    fun execute_validFeedUrl_willReturnEmptyObservable() {
+        val observable = Observable.empty<Void>()
+        given { feedSubscriptionRepository.create(FeedSubscription(VALID_FEED_URL)) }.willReturn(observable)
 
         subscribeUseCase = Subscribe(subscriberThread, observerThread, feedSubscriptionRepository)
         subscribeUseCase.execute(feedSubscriptionTestObserver, FeedSubscription(VALID_FEED_URL))
@@ -54,7 +53,6 @@ class SubscribeTest {
 
         testScheduler.advanceTimeTo(1, TimeUnit.SECONDS)
 
-        feedSubscriptionTestObserver.assertValue(feed)
         feedSubscriptionTestObserver.assertComplete()
         feedSubscriptionTestObserver.assertNoErrors()
     }

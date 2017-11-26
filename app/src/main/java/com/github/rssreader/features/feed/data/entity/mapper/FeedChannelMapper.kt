@@ -1,18 +1,18 @@
 package com.github.rssreader.features.feed.data.entity.mapper
 
 import com.github.rssreader.base.data.entity.mapper.Mapper
-import com.github.rssreader.features.feed.data.entity.FeedEntity
+import com.github.rssreader.features.feed.data.entity.FeedChannelEntity
 import com.github.rssreader.features.feed.data.entity.FeedImageEntity
-import com.github.rssreader.features.feed.domain.models.Feed
+import com.github.rssreader.features.feed.domain.models.FeedChannel
 import com.github.rssreader.features.feed.domain.models.FeedImage
 import io.reactivex.Observable
 import io.reactivex.rxkotlin.zipWith
 
 
-class FeedMapper(private val feedItemMapper: FeedItemMapper,
-                 private val feedImageMapper: Mapper<FeedImage, FeedImageEntity>
-) : Mapper<Feed, FeedEntity> {
-    override fun transformToEntity(model: Feed): Observable<FeedEntity> {
+class FeedChannelMapper(private val feedItemMapper: FeedItemMapper,
+                        private val feedImageMapper: Mapper<FeedImage, FeedImageEntity>
+) : Mapper<FeedChannel, FeedChannelEntity> {
+    override fun transformToEntity(model: FeedChannel): Observable<FeedChannelEntity> {
 
         val feedItemEntitiesObservable = feedItemMapper.transformToEntityList(model.items)
         val feedImageEntityObservable = feedImageMapper.transformToEntity(model.image)
@@ -20,9 +20,9 @@ class FeedMapper(private val feedItemMapper: FeedItemMapper,
         return feedItemEntitiesObservable
                 .zipWith(feedImageEntityObservable)
                 .map { (feedItemEntities, feedImageEntity) ->
-                    FeedEntity(
+                    FeedChannelEntity(
                         model.title,
-                        model.link,
+                        listOf(model.link),
                         model.description,
                         model.language,
                         model.managingEditorEmail,
@@ -34,16 +34,16 @@ class FeedMapper(private val feedItemMapper: FeedItemMapper,
                 )}
     }
 
-    override fun transformToDomainModel(entity: FeedEntity): Observable<Feed> {
+    override fun transformToDomainModel(entity: FeedChannelEntity): Observable<FeedChannel> {
         val feedItemsObservable = feedItemMapper.transformToDomainModelList(entity.items)
         val feedImageObservable = feedImageMapper.transformToDomainModel(entity.image)
 
         return feedItemsObservable
                 .zipWith(feedImageObservable)
                 .map { (feedItems, feedImages) ->
-                    Feed(
+                    FeedChannel(
                         entity.title,
-                        entity.link,
+                        entity.links.first(),
                         entity.description,
                         entity.language,
                         entity.managingEditorEmail,
