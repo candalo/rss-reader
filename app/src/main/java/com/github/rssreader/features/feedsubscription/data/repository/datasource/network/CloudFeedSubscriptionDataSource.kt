@@ -5,9 +5,10 @@ import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscrip
 import io.reactivex.Observable
 import okhttp3.ResponseBody
 import retrofit2.Response
+import javax.inject.Inject
 
 
-class CloudFeedSubscriptionDataSource(private val restApi: FeedSubscriptionRestApi) {
+class CloudFeedSubscriptionDataSource @Inject constructor(private val restApi: FeedSubscriptionRestApi) {
 
     fun create(feedSubscription: FeedSubscription): Observable<Void> =
             restApi.subscribe(feedUrl = feedSubscription.url).flatMap { response -> handleResponse(response)}

@@ -1,16 +1,16 @@
 package com.github.rssreader.features.feedsubscription.presentation.presenter
 
 import com.github.rssreader.base.domain.UseCase
-import com.github.rssreader.base.presentation.presenter.ErrorMessageHandler
+import com.github.rssreader.base.presentation.view.ErrorMessageHandler
 import com.github.rssreader.base.presentation.presenter.Presenter
-import com.github.rssreader.features.feed.domain.models.FeedChannel
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
 import com.github.rssreader.features.feedsubscription.presentation.view.FeedSubscriptionView
 import io.reactivex.observers.DisposableObserver
+import javax.inject.Inject
 
 
-class FeedSubscriptionPresenter(
-        private val subscriptionUseCase: UseCase<FeedChannel, FeedSubscription>,
+class FeedSubscriptionPresenter @Inject constructor(
+        private val subscriptionUseCase: UseCase<Void, @JvmSuppressWildcards FeedSubscription>,
         private val errorMessageHandler: ErrorMessageHandler
 ) : Presenter<FeedSubscriptionView> {
 
@@ -18,9 +18,14 @@ class FeedSubscriptionPresenter(
 
     override fun attachTo(view: FeedSubscriptionView) {
         this.view = view
+        init()
     }
 
     override fun destroy() = subscriptionUseCase.dispose()
+
+    private fun init() {
+        view.setupToolbar()
+    }
 
     fun onFeedSubscriptionUrlConfirmed(url: String) {
         view.showLoading()
@@ -31,18 +36,19 @@ class FeedSubscriptionPresenter(
     // because onNext method is not necessary in this case
     //
     // TODO: Inherit DisposableCompletableObserver instead of DisposableObserver
-    inner class FeedSubscriptionObserver : DisposableObserver<FeedChannel>() {
+    inner class FeedSubscriptionObserver : DisposableObserver<Void>() {
         override fun onError(e: Throwable) {
             view.hideLoading()
-            view.showErrorMessage(errorMessageHandler.handle(e.message))
+            view.showErrorMessage(errorMessageHandler.handle(e))
         }
 
-        override fun onNext(feedChannel: FeedChannel) {
+        override fun onNext(aVoid: Void) {
 
         }
 
         override fun onComplete() {
             view.hideLoading()
+            view.showFeedSubscribedMessage()
         }
     }
 }

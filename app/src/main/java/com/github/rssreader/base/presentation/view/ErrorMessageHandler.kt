@@ -1,4 +1,4 @@
-package com.github.rssreader.base.presentation.presenter
+package com.github.rssreader.base.presentation.view
 
 
 interface ErrorMessageHandler {
@@ -6,9 +6,9 @@ interface ErrorMessageHandler {
     /**
      * Handles an exception error message returning an appropriate message to the view
      *
-     * @param  exceptionErrorMessage exception message
+     * @param  exception
      * @return appropriate message to the view
      */
-    fun handle(exceptionErrorMessage: String?): String
+    fun handle(exception: Throwable): String
 
 }

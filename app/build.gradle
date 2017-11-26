@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 apply plugin: 'jacoco-android'
 
 jacocoAndroidUnitTestReport {
@@ -26,12 +28,18 @@ android {
             testCoverageEnabled true
         }
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 ext {
     supportLibraryVersion = '26.1.0'
     constraintLayoutVersion = '1.0.2'
     expressoVersion = '2.2.2'
+    roboletricVersion = '3.5.1'
     junitVersion = '4.12'
     mockitoVersion = '2.9.0'
     mockitoKotlinVersion = '1.5.0'
@@ -43,6 +51,7 @@ ext {
     retrofitVersion = '2.3.0'
     retrofitAdapterRxJavaVersion = '2.3.0'
     retrofitConverterSimpleXmlVersion = '2.3.0'
+    daggerVersion = '2.12'
     ioUtilsVersion = '2.4'
 }
 
@@ -55,15 +64,19 @@ dependencies {
     androidTestCompile("com.android.support.test.espresso:espresso-core:$expressoVersion", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    testImplementation "org.robolectric:robolectric:$roboletricVersion"
     testCompile "junit:junit:$junitVersion"
     testCompile "org.mockito:mockito-inline:$mockitoVersion"
-    testCompile "com.nhaarman:mockito-kotlin-kt1.1:$mockitoKotlinVersion", { exclude group: 'org.jetbrains.kotlin' }
+    testCompile "com.nhaarman:mockito-kotlin-kt1.1:$mockitoKotlinVersion", {
+        exclude group: 'org.jetbrains.kotlin'
+    }
     testCompile "com.natpryce:hamkrest:$hamkrestVersion"
     testCompile "com.squareup.okhttp3:mockwebserver:$mockwebserverVersion"
 
     // support library
     compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-    compile "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+    implementation "com.android.support:design:$supportLibraryVersion"
 
     // rx
     compile "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
@@ -73,16 +86,18 @@ dependencies {
     // network
     compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
     compile "com.squareup.retrofit2:adapter-rxjava2:$retrofitAdapterRxJavaVersion"
-    compile ("com.squareup.retrofit2:converter-simplexml:$retrofitConverterSimpleXmlVersion") {
+    compile("com.squareup.retrofit2:converter-simplexml:$retrofitConverterSimpleXmlVersion") {
         exclude group: 'xpp3', module: 'xpp3'
         exclude group: 'stax', module: 'stax-api'
         exclude group: 'stax', module: 'stax'
     }
 
+    // di
+    compile "com.google.dagger:dagger:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
     // utils
     compile "org.apache.directory.studio:org.apache.commons.io:$ioUtilsVersion"
 }
 
-repositories {
-    mavenCentral()
-}
+

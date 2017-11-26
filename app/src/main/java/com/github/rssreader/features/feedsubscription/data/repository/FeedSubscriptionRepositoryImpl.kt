@@ -4,9 +4,10 @@ import com.github.rssreader.features.feedsubscription.data.repository.datasource
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
 import com.github.rssreader.features.feedsubscription.domain.repository.FeedSubscriptionRepository
 import io.reactivex.Observable
+import javax.inject.Inject
 
 
-class FeedSubscriptionRepositoryImpl(private val cloudFeedSubscriptionDataSource: CloudFeedSubscriptionDataSource) : FeedSubscriptionRepository {
+class FeedSubscriptionRepositoryImpl @Inject constructor(private val cloudFeedSubscriptionDataSource: CloudFeedSubscriptionDataSource) : FeedSubscriptionRepository {
 
     override fun create(feedSubscription: FeedSubscription): Observable<Void> =
             cloudFeedSubscriptionDataSource.create(feedSubscription)

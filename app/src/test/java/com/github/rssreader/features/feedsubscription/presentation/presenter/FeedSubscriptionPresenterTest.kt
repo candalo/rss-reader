@@ -1,8 +1,7 @@
 package com.github.rssreader.features.feedsubscription.presentation.presenter
 
 import com.github.rssreader.base.domain.UseCase
-import com.github.rssreader.base.presentation.presenter.ErrorMessageHandler
-import com.github.rssreader.features.feed.domain.models.FeedChannel
+import com.github.rssreader.base.presentation.view.ErrorMessageHandler
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
 import com.github.rssreader.features.feedsubscription.presentation.view.FeedSubscriptionView
 import com.nhaarman.mockito_kotlin.*
@@ -17,7 +16,7 @@ class FeedSubscriptionPresenterTest {
     private lateinit var feedSubscriptionPresenter: FeedSubscriptionPresenter
     private lateinit var feedSubscriptionObserver: FeedSubscriptionPresenter.FeedSubscriptionObserver
 
-    @Mock private lateinit var mockSubscriptionUseCase: UseCase<FeedChannel, FeedSubscription>
+    @Mock private lateinit var mockSubscriptionUseCase: UseCase<Void, FeedSubscription>
     @Mock private lateinit var mockErrorMessageHandler: ErrorMessageHandler
     @Mock private lateinit var mockView: FeedSubscriptionView
 
@@ -29,6 +28,11 @@ class FeedSubscriptionPresenterTest {
         feedSubscriptionPresenter.attachTo(mockView)
 
         feedSubscriptionObserver = feedSubscriptionPresenter.FeedSubscriptionObserver()
+    }
+
+    @Test
+    fun `init_successfully`() {
+        verify(mockView, times(1)).setupToolbar()
     }
 
     @Test
@@ -46,16 +50,18 @@ class FeedSubscriptionPresenterTest {
 
         inOrder(mockView, mockSubscriptionUseCase) {
             verify(mockView, times(1)).showLoading()
-            verify(mockSubscriptionUseCase, times(1)).execute(any<DisposableObserver<FeedChannel>>(), any<FeedSubscription>())
+            verify(mockSubscriptionUseCase, times(1)).execute(any<DisposableObserver<Void>>(), any<FeedSubscription>())
         }
     }
 
     @Test
     fun `feedSubscriptionObserver_successfully_willHideLoading`() {
-        feedSubscriptionObserver.onNext(FeedChannel("title", "link", "description"))
         feedSubscriptionObserver.onComplete()
 
-        verify(mockView, times(1)).hideLoading()
+        inOrder(mockView) {
+            verify(mockView, times(1)).hideLoading()
+            verify(mockView, times(1)).showFeedSubscribedMessage()
+        }
     }
 
     @Test
@@ -63,7 +69,7 @@ class FeedSubscriptionPresenterTest {
         val errorMessage = "Invalid url"
         val exception = Exception(errorMessage)
 
-        given { mockErrorMessageHandler.handle(exception.message) }.willReturn(errorMessage)
+        given { mockErrorMessageHandler.handle(exception) }.willReturn(errorMessage)
 
         feedSubscriptionObserver.onError(exception)
 
