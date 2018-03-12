@@ -9,14 +9,15 @@ import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import com.github.rssreader.R
 import com.github.rssreader.base.data.di.DaggerBaseComponent
+import com.github.rssreader.base.presentation.view.ActivityUtils
 import com.github.rssreader.features.feedsubscription.data.di.DaggerFeedSubscriptionComponent
 import com.github.rssreader.features.feedsubscription.data.di.FeedSubscriptionModule
 import com.github.rssreader.features.feedsubscription.presentation.presenter.FeedSubscriptionPresenter
 import com.github.rssreader.network.DaggerNetworkComponent
+import kotlinx.android.synthetic.main.activity_feed_subscription.root
 import kotlinx.android.synthetic.main.activity_feed_subscription.toolbar
 import kotlinx.android.synthetic.main.activity_feed_subscription.text_input_layout_feed_url as feedUrlTextInputLayout
 import kotlinx.android.synthetic.main.activity_feed_subscription.pb_feed_url as feedUrlProgressBar
-import kotlinx.android.synthetic.main.activity_feed_subscription.constraint_layout_feed_url as constraintLayout
 import javax.inject.Inject
 
 class FeedSubscriptionActivity : AppCompatActivity(), FeedSubscriptionView {
@@ -54,6 +55,7 @@ class FeedSubscriptionActivity : AppCompatActivity(), FeedSubscriptionView {
 
     private val urlConfirmationActionListener = TextView.OnEditorActionListener { _, keyCode, _ ->
         if (keyCode == EditorInfo.IME_ACTION_SEARCH) {
+            ActivityUtils.hideKeyboard(this)
             presenter.onFeedSubscriptionUrlConfirmed(feedUrlTextInputLayout.editText?.text.toString())
         }
         false
@@ -79,10 +81,10 @@ class FeedSubscriptionActivity : AppCompatActivity(), FeedSubscriptionView {
     }
 
     override fun showErrorMessage(message: String) {
-        Snackbar.make(constraintLayout, message, Snackbar.LENGTH_LONG).show()
+        Snackbar.make(root, message, Snackbar.LENGTH_LONG).show()
     }
 
     override fun showFeedSubscribedMessage() {
-        Snackbar.make(constraintLayout, getString(R.string.feed_subscription_success), Snackbar.LENGTH_LONG).show()
+        Snackbar.make(root, getString(R.string.feed_subscription_success), Snackbar.LENGTH_LONG).show()
     }
 }
