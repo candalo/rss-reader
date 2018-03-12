@@ -52,6 +52,7 @@ ext {
     retrofitAdapterRxJavaVersion = '2.3.0'
     retrofitConverterSimpleXmlVersion = '2.3.0'
     daggerVersion = '2.12'
+    dbflowVersion = '4.2.4'
     ioUtilsVersion = '2.4'
 }
 
@@ -95,6 +96,14 @@ dependencies {
     // di
     compile "com.google.dagger:dagger:$daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    // storage
+    kapt "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVersion}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:${dbflowVersion}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:${dbflowVersion}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions:${dbflowVersion}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-rx2:${dbflowVersion}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-rx2-kotlinextensions:${dbflowVersion}"
 
     // utils
     compile "org.apache.directory.studio:org.apache.commons.io:$ioUtilsVersion"
