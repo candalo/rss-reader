@@ -1,13 +1,11 @@
 package com.github.rssreader.features.feedsubscription.presentation.presenter
 
 import com.github.rssreader.base.domain.CompletableUseCase
-import com.github.rssreader.base.domain.UseCase
 import com.github.rssreader.base.presentation.view.ErrorMessageHandler
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
 import com.github.rssreader.features.feedsubscription.presentation.view.FeedSubscriptionView
 import com.nhaarman.mockito_kotlin.*
 import io.reactivex.observers.DisposableCompletableObserver
-import io.reactivex.observers.DisposableObserver
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
@@ -30,11 +28,6 @@ class FeedSubscriptionPresenterTest {
         feedSubscriptionPresenter.attachTo(mockView)
 
         feedSubscriptionObserver = feedSubscriptionPresenter.FeedSubscriptionObserver()
-    }
-
-    @Test
-    fun `init_successfully`() {
-        verify(mockView, times(1)).setupToolbar()
     }
 
     @Test

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Rss Reader</string>
 
+    <string name="add_subcription">Add subscription</string>
+
     <string name="feed_subscription_ed_hint">Enter feed url</string>
     <string name="feed_subscription_invalid">Invalid feed url!</string>
     <string name="feed_subscription_toolbar_title">Feed Subscription</string>

@@ -18,14 +18,9 @@ class FeedSubscriptionPresenter @Inject constructor(
 
     override fun attachTo(view: FeedSubscriptionView) {
         this.view = view
-        init()
     }
 
     override fun destroy() = subscriptionUseCase.dispose()
-
-    private fun init() {
-        view.setupToolbar()
-    }
 
     fun onFeedSubscriptionUrlConfirmed(url: String) {
         view.showLoading()

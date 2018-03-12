@@ -1,4 +1,4 @@
-package com.github.rssreader.base.presentation.view
+package com.github.rssreader.features
 
 import android.app.Application
 import com.raizlabs.android.dbflow.config.FlowManager

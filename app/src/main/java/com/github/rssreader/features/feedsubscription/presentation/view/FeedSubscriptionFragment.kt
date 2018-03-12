@@ -2,9 +2,10 @@ package com.github.rssreader.features.feedsubscription.presentation.view
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
+import android.support.v4.app.Fragment
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import com.github.rssreader.R
@@ -14,19 +15,21 @@ import com.github.rssreader.features.feedsubscription.data.di.DaggerFeedSubscrip
 import com.github.rssreader.features.feedsubscription.data.di.FeedSubscriptionModule
 import com.github.rssreader.features.feedsubscription.presentation.presenter.FeedSubscriptionPresenter
 import com.github.rssreader.network.DaggerNetworkComponent
-import kotlinx.android.synthetic.main.activity_feed_subscription.root
-import kotlinx.android.synthetic.main.activity_feed_subscription.toolbar
-import kotlinx.android.synthetic.main.activity_feed_subscription.text_input_layout_feed_url as feedUrlTextInputLayout
-import kotlinx.android.synthetic.main.activity_feed_subscription.pb_feed_url as feedUrlProgressBar
+import kotlinx.android.synthetic.main.fragment_feed_subscription.text_input_layout_feed_url as feedUrlTextInputLayout
+import kotlinx.android.synthetic.main.fragment_feed_subscription.pb_feed_url as feedUrlProgressBar
 import javax.inject.Inject
 
-class FeedSubscriptionActivity : AppCompatActivity(), FeedSubscriptionView {
+class FeedSubscriptionFragment : Fragment(), FeedSubscriptionView {
 
     @Inject lateinit var presenter: FeedSubscriptionPresenter
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_feed_subscription)
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_feed_subscription, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
         injectDependencies()
         setupPresenter()
         setupEditTextListener()
@@ -40,7 +43,7 @@ class FeedSubscriptionActivity : AppCompatActivity(), FeedSubscriptionView {
                 .builder()
                 .baseComponent(baseComponent)
                 .networkComponent(networkComponent)
-                .feedSubscriptionModule(FeedSubscriptionModule(this))
+                .feedSubscriptionModule(context?.let { FeedSubscriptionModule(it) })
                 .build()
                 .inject(this)
     }
@@ -55,7 +58,7 @@ class FeedSubscriptionActivity : AppCompatActivity(), FeedSubscriptionView {
 
     private val urlConfirmationActionListener = TextView.OnEditorActionListener { _, keyCode, _ ->
         if (keyCode == EditorInfo.IME_ACTION_SEARCH) {
-            ActivityUtils.hideKeyboard(this)
+            activity?.let { ActivityUtils.hideKeyboard(it) }
             presenter.onFeedSubscriptionUrlConfirmed(feedUrlTextInputLayout.editText?.text.toString())
         }
         false
@@ -64,10 +67,6 @@ class FeedSubscriptionActivity : AppCompatActivity(), FeedSubscriptionView {
     override fun onDestroy() {
         super.onDestroy()
         presenter.destroy()
-    }
-
-    override fun setupToolbar() {
-        (toolbar as Toolbar).title = getString(R.string.feed_subscription_toolbar_title)
     }
 
     override fun showLoading() {
@@ -81,10 +80,10 @@ class FeedSubscriptionActivity : AppCompatActivity(), FeedSubscriptionView {
     }
 
     override fun showErrorMessage(message: String) {
-        Snackbar.make(root, message, Snackbar.LENGTH_LONG).show()
+        Snackbar.make(activity?.findViewById(android.R.id.content)!!, message, Snackbar.LENGTH_LONG).show()
     }
 
     override fun showFeedSubscribedMessage() {
-        Snackbar.make(root, getString(R.string.feed_subscription_success), Snackbar.LENGTH_LONG).show()
+        Snackbar.make(activity?.findViewById(android.R.id.content)!!, getString(R.string.feed_subscription_success), Snackbar.LENGTH_LONG).show()
     }
 }

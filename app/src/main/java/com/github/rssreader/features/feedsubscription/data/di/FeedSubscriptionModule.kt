@@ -2,7 +2,7 @@ package com.github.rssreader.features.feedsubscription.data.di
 
 import android.content.Context
 import com.github.rssreader.base.data.di.BaseModule
-import com.github.rssreader.base.data.di.scope.ActivityScope
+import com.github.rssreader.base.data.di.scope.FragmentScope
 import com.github.rssreader.base.data.entity.mapper.Mapper
 import com.github.rssreader.base.domain.CompletableUseCase
 import com.github.rssreader.base.domain.Thread
@@ -29,46 +29,46 @@ import javax.inject.Named
 class FeedSubscriptionModule(private val context: Context) {
 
     @Provides
-    @ActivityScope
+    @FragmentScope
     fun provideRestApi(retrofit: Retrofit): FeedSubscriptionRestApi =
             retrofit.create(FeedSubscriptionRestApi::class.java)
 
     @Provides
-    @ActivityScope
+    @FragmentScope
     fun provideCloudDataSource(restApi: FeedSubscriptionRestApi): CloudFeedSubscriptionDataSource =
             CloudFeedSubscriptionDataSource(restApi)
 
     @Provides
-    @ActivityScope
+    @FragmentScope
     fun provideLocalDataSource(): LocalFeedSubscriptionDataSource =
             LocalFeedSubscriptionDataSource()
 
     @Provides
-    @ActivityScope
+    @FragmentScope
     fun provideFeedSubscriptionMapper(): Mapper<FeedSubscription, FeedSubscriptionEntity> =
             FeedSubscriptionMapper()
 
     @Provides
-    @ActivityScope
+    @FragmentScope
     fun provideRepository(cloudDataSource: CloudFeedSubscriptionDataSource,
                           localDataSource: LocalFeedSubscriptionDataSource,
                           mapper: Mapper<FeedSubscription, FeedSubscriptionEntity>): FeedSubscriptionRepository =
             FeedSubscriptionRepositoryImpl(cloudDataSource, localDataSource, mapper)
 
     @Provides
-    @ActivityScope
+    @FragmentScope
     fun provideUseCase(@Named(BaseModule.NEW_THREAD_INJECTION_ID) subscriberThread: Thread,
                        @Named(BaseModule.MAIN_THREAD_INJECTION_ID) observerThread: Thread,
                        repository: FeedSubscriptionRepository): CompletableUseCase<FeedSubscription> =
             Subscribe(subscriberThread, observerThread, repository)
 
     @Provides
-    @ActivityScope
+    @FragmentScope
     fun provideErrorMessageHandler(): ErrorMessageHandler =
             FeedSubscriptionErrorMessageHandler(context)
 
     @Provides
-    @ActivityScope
+    @FragmentScope
     fun providePresenter(feedSubscriptionUseCase: CompletableUseCase<FeedSubscription>,
                          errorMessageHandler: ErrorMessageHandler): Presenter<FeedSubscriptionView> =
             FeedSubscriptionPresenter(feedSubscriptionUseCase, errorMessageHandler)
