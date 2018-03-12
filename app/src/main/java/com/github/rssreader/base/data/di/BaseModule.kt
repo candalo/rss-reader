@@ -22,7 +22,7 @@ class BaseModule {
 
     @Provides
     @Named(NEW_THREAD_INJECTION_ID)
-    fun provideNewThread(): Thread = ThreadImpl(Schedulers.newThread())
+    fun provideNewThread(): Thread = ThreadImpl(Schedulers.io())
 
     inner class ThreadImpl(val thread: Scheduler) : Thread {
         override fun get(): Scheduler = thread

@@ -8,7 +8,7 @@ import com.github.rssreader.features.feedsubscription.domain.usecases.Subscribe
 import com.nhaarman.mockito_kotlin.given
 import com.nhaarman.mockito_kotlin.times
 import com.nhaarman.mockito_kotlin.verify
-import io.reactivex.Observable
+import io.reactivex.Completable
 import io.reactivex.observers.TestObserver
 import io.reactivex.schedulers.TestScheduler
 import org.junit.Before
@@ -42,9 +42,9 @@ class SubscribeTest {
     }
 
     @Test
-    fun execute_validFeedUrl_willReturnEmptyObservable() {
-        val observable = Observable.empty<Void>()
-        given { feedSubscriptionRepository.create(FeedSubscription(VALID_FEED_URL)) }.willReturn(observable)
+    fun execute_validFeedUrl_willReturnEmptyCompletable() {
+        val completable = Completable.complete()
+        given { feedSubscriptionRepository.create(FeedSubscription(VALID_FEED_URL)) }.willReturn(completable)
 
         subscribeUseCase = Subscribe(subscriberThread, observerThread, feedSubscriptionRepository)
         subscribeUseCase.execute(feedSubscriptionTestObserver, FeedSubscription(VALID_FEED_URL))
@@ -61,7 +61,7 @@ class SubscribeTest {
     fun execute_invalidFeedUrl_willReturnError() {
         val exception = InvalidFeedSubscriptionException()
         given { feedSubscriptionRepository.create(FeedSubscription(INVALID_FEED_URL)) }
-                .willReturn(Observable.error(exception))
+                .willReturn(Completable.error(exception))
 
         subscribeUseCase = Subscribe(subscriberThread, observerThread, feedSubscriptionRepository)
         subscribeUseCase.execute(feedSubscriptionTestObserver, FeedSubscription(INVALID_FEED_URL))

@@ -2,7 +2,7 @@ package com.github.rssreader.features.feedsubscription.data.repository.datasourc
 
 import com.github.rssreader.features.feedsubscription.domain.InvalidFeedSubscriptionException
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
-import io.reactivex.Observable
+import io.reactivex.Completable
 import okhttp3.ResponseBody
 import retrofit2.Response
 import javax.inject.Inject
@@ -10,13 +10,13 @@ import javax.inject.Inject
 
 class CloudFeedSubscriptionDataSource @Inject constructor(private val restApi: FeedSubscriptionRestApi) {
 
-    fun create(feedSubscription: FeedSubscription): Observable<Void> =
-            restApi.subscribe(feedUrl = feedSubscription.url).flatMap { response -> handleResponse(response)}
+    fun create(feedSubscription: FeedSubscription): Completable =
+            restApi.subscribe(feedUrl = feedSubscription.url).flatMapCompletable { response -> handleResponse(response)}
 
-    private fun handleResponse(response: Response<ResponseBody>): Observable<Void> {
+    private fun handleResponse(response: Response<ResponseBody>): Completable {
         if (response.isSuccessful) {
-            return Observable.empty<Void>()
+            return Completable.complete()
         }
-        return Observable.error(InvalidFeedSubscriptionException())
+        return Completable.error(InvalidFeedSubscriptionException())
     }
 }

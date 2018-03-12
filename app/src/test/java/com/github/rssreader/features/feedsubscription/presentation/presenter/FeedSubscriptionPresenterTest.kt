@@ -1,10 +1,12 @@
 package com.github.rssreader.features.feedsubscription.presentation.presenter
 
+import com.github.rssreader.base.domain.CompletableUseCase
 import com.github.rssreader.base.domain.UseCase
 import com.github.rssreader.base.presentation.view.ErrorMessageHandler
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
 import com.github.rssreader.features.feedsubscription.presentation.view.FeedSubscriptionView
 import com.nhaarman.mockito_kotlin.*
+import io.reactivex.observers.DisposableCompletableObserver
 import io.reactivex.observers.DisposableObserver
 import org.junit.Before
 import org.junit.Test
@@ -16,7 +18,7 @@ class FeedSubscriptionPresenterTest {
     private lateinit var feedSubscriptionPresenter: FeedSubscriptionPresenter
     private lateinit var feedSubscriptionObserver: FeedSubscriptionPresenter.FeedSubscriptionObserver
 
-    @Mock private lateinit var mockSubscriptionUseCase: UseCase<Void, FeedSubscription>
+    @Mock private lateinit var mockSubscriptionUseCase: CompletableUseCase<FeedSubscription>
     @Mock private lateinit var mockErrorMessageHandler: ErrorMessageHandler
     @Mock private lateinit var mockView: FeedSubscriptionView
 
@@ -50,7 +52,7 @@ class FeedSubscriptionPresenterTest {
 
         inOrder(mockView, mockSubscriptionUseCase) {
             verify(mockView, times(1)).showLoading()
-            verify(mockSubscriptionUseCase, times(1)).execute(any<DisposableObserver<Void>>(), any<FeedSubscription>())
+            verify(mockSubscriptionUseCase, times(1)).execute(any<DisposableCompletableObserver>(), any<FeedSubscription>())
         }
     }
 

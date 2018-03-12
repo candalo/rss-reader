@@ -1,12 +1,16 @@
 package com.github.rssreader.features.feedsubscription.data
 
+import com.github.rssreader.base.data.entity.mapper.Mapper
 import com.github.rssreader.base.domain.Thread
+import com.github.rssreader.features.feedsubscription.data.entity.FeedSubscriptionEntity
 import com.github.rssreader.features.feedsubscription.data.repository.FeedSubscriptionRepositoryImpl
+import com.github.rssreader.features.feedsubscription.data.repository.datasource.database.LocalFeedSubscriptionDataSource
 import com.github.rssreader.features.feedsubscription.data.repository.datasource.network.CloudFeedSubscriptionDataSource
 import com.github.rssreader.features.feedsubscription.domain.InvalidFeedSubscriptionException
 import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.given
+import io.reactivex.Completable
 import io.reactivex.Observable
 import io.reactivex.observers.TestObserver
 import io.reactivex.schedulers.TestScheduler
@@ -29,6 +33,8 @@ class FeedSubscriptionRepositoryImplTest {
     private lateinit var repository: FeedSubscriptionRepositoryImpl
 
     @Mock private lateinit var cloudFeedSubscriptionDataSource: CloudFeedSubscriptionDataSource
+    @Mock private lateinit var localFeedSubscriptionDataSource: LocalFeedSubscriptionDataSource
+    @Mock private lateinit var mapper: Mapper<FeedSubscription, FeedSubscriptionEntity>
     @Mock private lateinit var thread: Thread
 
     @Before
@@ -37,12 +43,15 @@ class FeedSubscriptionRepositoryImplTest {
 
         given { thread.get() }.willReturn(testScheduler)
 
-        repository = FeedSubscriptionRepositoryImpl(cloudFeedSubscriptionDataSource)
+        repository = FeedSubscriptionRepositoryImpl(cloudFeedSubscriptionDataSource,
+                localFeedSubscriptionDataSource, mapper)
     }
 
     @Test
-    fun create_validFeedSubscription_willReturnEmptyObservable() {
-        given { cloudFeedSubscriptionDataSource.create(any<FeedSubscription>()) }.willReturn(Observable.empty())
+    fun create_validFeedSubscription_willReturnCompletable() {
+        given { cloudFeedSubscriptionDataSource.create(any<FeedSubscription>()) }.willReturn(Completable.complete())
+        given { localFeedSubscriptionDataSource.save(any<FeedSubscriptionEntity>()) }.willReturn(Completable.complete())
+        given { mapper.transformToEntity(any<FeedSubscription>()) }.willReturn(Observable.just(FeedSubscriptionEntity("")))
 
         val feedSubscription = FeedSubscription(VALID_FEED_URL)
 
@@ -61,7 +70,9 @@ class FeedSubscriptionRepositoryImplTest {
     @Test
     fun create_invalidFeedSubscription_willReturnError() {
         val exception = InvalidFeedSubscriptionException()
-        given { cloudFeedSubscriptionDataSource.create(any<FeedSubscription>()) }.willReturn(Observable.error(exception))
+        given { cloudFeedSubscriptionDataSource.create(any<FeedSubscription>()) }.willReturn(Completable.error(exception))
+        given { localFeedSubscriptionDataSource.save(any<FeedSubscriptionEntity>()) }.willReturn(Completable.complete())
+        given { mapper.transformToEntity(any<FeedSubscription>()) }.willReturn(Observable.just(FeedSubscriptionEntity("")))
 
         val feedSubscription = FeedSubscription(INVALID_FEED_URL)
 
