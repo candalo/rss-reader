@@ -3,14 +3,11 @@ package com.github.rssreader.features.feed.data.entity.mapper
 import com.github.rssreader.base.data.entity.mapper.Mapper
 import com.github.rssreader.base.domain.Thread
 import com.github.rssreader.features.feed.data.entity.FeedChannelEntity
-import com.github.rssreader.features.feed.data.entity.FeedImageEntity
-import com.github.rssreader.features.feed.data.entity.FeedItemEntity
+import com.github.rssreader.features.feed.data.entity.FeedEntity
+import com.github.rssreader.features.feed.domain.models.Feed
 import com.github.rssreader.features.feed.domain.models.FeedChannel
-import com.github.rssreader.features.feed.domain.models.FeedImage
-import com.github.rssreader.features.feed.domain.models.FeedItem
+import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.given
-import com.nhaarman.mockito_kotlin.times
-import com.nhaarman.mockito_kotlin.verify
 import io.reactivex.Observable
 import io.reactivex.observers.TestObserver
 import io.reactivex.schedulers.TestScheduler
@@ -23,275 +20,62 @@ import java.util.concurrent.TimeUnit
 
 class FeedMapperTest {
 
-    private val firstTestObserver = TestObserver<FeedChannelEntity>()
-    private val secondTestObserver = TestObserver<FeedChannel>()
+    private val entityTestObserver = TestObserver<FeedEntity>()
+    private val modelTestObserver = TestObserver<Feed>()
     private val testScheduler = TestScheduler()
+    private val feedChannel = FeedChannel("", "", "")
+    private val feedChannelEntity = FeedChannelEntity()
 
-    @Mock private lateinit var thread: Thread
-    @Mock private lateinit var feedItemMapper: FeedItemMapper
-    @Mock private lateinit var feedImageMapper: Mapper<FeedImage, FeedImageEntity>
+    @Mock
+    private lateinit var thread: Thread
+    @Mock
+    private lateinit var feedChannelMapper: Mapper<FeedChannel, FeedChannelEntity>
 
     @Before
     fun init() {
         MockitoAnnotations.initMocks(this)
-
         given { thread.get() }.willReturn(testScheduler)
+        given { feedChannelMapper.transformToEntity(any<FeedChannel>()) }.willReturn(Observable.just(feedChannelEntity))
+        given { feedChannelMapper.transformToDomainModel(any<FeedChannelEntity>())}.willReturn(Observable.just(feedChannel))
     }
 
     @Test
-    fun transformToEntity_completeDomainModel_willReturnEntityObservable() {
-        val feedItem = FeedItem(
-                "title",
-                "link",
-                "description",
-                "authorEmail",
-                listOf("category"),
-                "pubDate"
-        )
-        val feedItemList = arrayListOf(feedItem)
-        val feedItemEntity = FeedItemEntity(
-                "title",
-                "link",
-                "description",
-                "authorEmail",
-                listOf("category"),
-                "pubDate"
-        )
-        val feedItemEntityList = arrayListOf(feedItemEntity)
+    fun `Transform to Entity`() {
+        val feed = Feed(feedChannel)
 
-        given { feedItemMapper.transformToEntityList(feedItemList) }.willReturn(Observable.just(feedItemEntityList))
+        val feedMapper = FeedMapper(feedChannelMapper)
+        val feedEntityObservable = feedMapper.transformToEntity(feed)
 
-        val feedImage = FeedImage("url")
-        val feedImageEntity = FeedImageEntity("url")
-
-        given { feedImageMapper.transformToEntity(feedImage) }.willReturn(Observable.just(feedImageEntity))
-
-        val feed = FeedChannel(
-                "title",
-                "link",
-                "description",
-                "language",
-                "managingEditorEmail",
-                "pubDate",
-                "lastBuildDate",
-                "category",
-                feedImage,
-                feedItemList
-        )
-
-        val mapper = FeedChannelMapper(feedItemMapper, feedImageMapper)
-        val punchEntityObservable = mapper.transformToEntity(feed)
-
-        punchEntityObservable
+        feedEntityObservable
                 .subscribeOn(thread.get())
                 .observeOn(thread.get())
-                .subscribeWith(firstTestObserver)
-
-        val feedEntity = FeedChannelEntity(
-                "title",
-                listOf("link"),
-                "description",
-                "language",
-                "managingEditorEmail",
-                "pubDate",
-                "lastBuildDate",
-                "category",
-                feedImageEntity,
-                feedItemEntityList
-        )
+                .subscribeWith(entityTestObserver)
 
         testScheduler.advanceTimeBy(1, TimeUnit.SECONDS)
 
-        firstTestObserver.assertValueCount(1)
-        firstTestObserver.assertValue(feedEntity)
-        firstTestObserver.assertComplete()
-        firstTestObserver.assertNoErrors()
-
-        verify(feedItemMapper, times(1)).transformToEntityList(feedItemList)
-        verify(feedImageMapper, times(1)).transformToEntity(feedImage)
+        entityTestObserver.assertValueCount(1)
+        entityTestObserver.assertValue(FeedEntity())
+        entityTestObserver.assertComplete()
+        entityTestObserver.assertNoErrors()
     }
 
     @Test
-    fun transformToEntity_onlyRequiredDataDomainModel_willReturnEntityObservable() {
-        val feedItemList = ArrayList<FeedItem>()
-        val feedItemEntityList = ArrayList<FeedItemEntity>()
-        val feedImage = FeedImage()
-        val feedImageEntity = FeedImageEntity()
+    fun `Transform to Domain Model`() {
+        val feedEntity = FeedEntity()
 
-        given { feedItemMapper.transformToEntityList(feedItemList) }.willReturn(Observable.just(feedItemEntityList))
-        given { feedImageMapper.transformToEntity(feedImage) }.willReturn(Observable.just(feedImageEntity))
+        val feedMapper = FeedMapper(feedChannelMapper)
+        val feedObservable = feedMapper.transformToDomainModel(feedEntity)
 
-        val feed = FeedChannel(
-                "title",
-                "link",
-                "description",
-                "",
-                "",
-                "",
-                "",
-                "",
-                feedImage,
-                feedItemList
-        )
-
-        val mapper = FeedChannelMapper(feedItemMapper, feedImageMapper)
-        val punchEntityObservable = mapper.transformToEntity(feed)
-
-        punchEntityObservable
+        feedObservable
                 .subscribeOn(thread.get())
                 .observeOn(thread.get())
-                .subscribeWith(firstTestObserver)
-
-        val feedEntity = FeedChannelEntity(
-                "title",
-                listOf("link"),
-                "description",
-                "",
-                "",
-                "",
-                "",
-                "",
-                feedImageEntity,
-                feedItemEntityList
-        )
+                .subscribeWith(modelTestObserver)
 
         testScheduler.advanceTimeBy(1, TimeUnit.SECONDS)
 
-        firstTestObserver.assertValueCount(1)
-        firstTestObserver.assertValue(feedEntity)
-        firstTestObserver.assertComplete()
-        firstTestObserver.assertNoErrors()
-
-        verify(feedItemMapper, times(1)).transformToEntityList(feedItemList)
-        verify(feedImageMapper, times(1)).transformToEntity(feedImage)
-    }
-
-    @Test
-    fun transformToDomainModel_completeEntity_willReturnDomainModelObservable() {
-        val feedItem = FeedItem(
-                "title",
-                "link",
-                "description",
-                "authorEmail",
-                listOf("category"),
-                "pubDate"
-        )
-        val feedItemList = arrayListOf(feedItem)
-        val feedItemEntity = FeedItemEntity(
-                "title",
-                "link",
-                "description",
-                "authorEmail",
-                listOf("category"),
-                "pubDate"
-        )
-        val feedItemEntityList = arrayListOf(feedItemEntity)
-
-        given { feedItemMapper.transformToDomainModelList(feedItemEntityList) }.willReturn(Observable.just(feedItemList))
-
-        val feedImage = FeedImage("url")
-        val feedImageEntity = FeedImageEntity("url")
-
-        given { feedImageMapper.transformToDomainModel(feedImageEntity) }.willReturn(Observable.just(feedImage))
-
-        val feedEntity = FeedChannelEntity(
-                "title",
-                listOf("link"),
-                "description",
-                "language",
-                "managingEditorEmail",
-                "pubDate",
-                "lastBuildDate",
-                "category",
-                feedImageEntity,
-                feedItemEntityList
-        )
-
-        val mapper = FeedChannelMapper(feedItemMapper, feedImageMapper)
-        val punchEntityObservable = mapper.transformToDomainModel(feedEntity)
-
-        punchEntityObservable
-                .subscribeOn(thread.get())
-                .observeOn(thread.get())
-                .subscribeWith(secondTestObserver)
-
-        val feed = FeedChannel(
-                "title",
-                "link",
-                "description",
-                "language",
-                "managingEditorEmail",
-                "pubDate",
-                "lastBuildDate",
-                "category",
-                feedImage,
-                feedItemList
-        )
-
-        testScheduler.advanceTimeBy(1, TimeUnit.SECONDS)
-
-        secondTestObserver.assertValueCount(1)
-        secondTestObserver.assertValue(feed)
-        secondTestObserver.assertComplete()
-        secondTestObserver.assertNoErrors()
-
-        verify(feedItemMapper, times(1)).transformToDomainModelList(feedItemEntityList)
-        verify(feedImageMapper, times(1)).transformToDomainModel(feedImageEntity)
-    }
-
-    @Test
-    fun transformToDomainModel_onlyRequiredEntity_willReturnDomainModelObservable() {
-        val feedItemList = ArrayList<FeedItem>()
-        val feedItemEntityList = ArrayList<FeedItemEntity>()
-
-        given { feedItemMapper.transformToDomainModelList(feedItemEntityList) }.willReturn(Observable.just(feedItemList))
-
-        val feedImage = FeedImage()
-        val feedImageEntity = FeedImageEntity()
-
-        given { feedImageMapper.transformToDomainModel(feedImageEntity) }.willReturn(Observable.just(feedImage))
-
-        val feedEntity = FeedChannelEntity(
-                "title",
-                listOf("link"),
-                "description",
-                "",
-                "",
-                "",
-                "",
-                "",
-                feedImageEntity,
-                feedItemEntityList
-        )
-
-        val mapper = FeedChannelMapper(feedItemMapper, feedImageMapper)
-        val punchEntityObservable = mapper.transformToDomainModel(feedEntity)
-
-        punchEntityObservable
-                .subscribeOn(thread.get())
-                .observeOn(thread.get())
-                .subscribeWith(secondTestObserver)
-
-        val feed = FeedChannel(
-                "title",
-                "link",
-                "description",
-                "",
-                "",
-                "",
-                "",
-                "",
-                feedImage,
-                feedItemList)
-
-        testScheduler.advanceTimeBy(1, TimeUnit.SECONDS)
-
-        secondTestObserver.assertValueCount(1)
-        secondTestObserver.assertValue(feed)
-        secondTestObserver.assertComplete()
-        secondTestObserver.assertNoErrors()
-
-        verify(feedItemMapper, times(1)).transformToDomainModelList(feedItemEntityList)
-        verify(feedImageMapper, times(1)).transformToDomainModel(feedImageEntity)
+        modelTestObserver.assertValueCount(1)
+        modelTestObserver.assertValue(Feed(feedChannel))
+        modelTestObserver.assertComplete()
+        modelTestObserver.assertNoErrors()
     }
 }

@@ -2,6 +2,7 @@
     <string name="app_name">Rss Reader</string>
 
     <string name="add_subcription">Add subscription</string>
+    <string name="show">Show</string>
 
     <string name="feed_subscription_ed_hint">Enter feed url</string>
     <string name="feed_subscription_invalid">Invalid feed url!</string>
@@ -9,4 +10,10 @@
     <string name="feed_subscription_success">Feed subscribed!</string>
 
     <string name="generic_error">Ops! Some error has occurred. Please, try again</string>
+    <string name="feed_description_example">
+        This one is finally settled.
+        The seemingly never-ending saga of Broadcom\'s attempted takeover of Qualcomm has all-but-ended, as President Trump today issued an order that the deal will not be allowed to go through under the assertion that it would be a threat to U.S. national security. Broadcom is primarily a Singapore-based company, but operates globally. Qualcomm and Broadcom have been dancing around the details of a potential merger or takeover for several months, but in recent weeks had clearly been nearing a deal as Broadcom finalizes moving its headquarters to the U.S.
+        There's a ton of required legal-speak in here, but it's very clear that the executive branch is not interested in this type of deal going through in any form, and no representatives of Broadcom are to be allowed to be on the Board of Directors at Qualcomm:
+        The proposed takeover of Qualcomm by [Broadcom] is prohibited, and any substantially equivalent merger, acquisition, or takeover, whether effected direct…
+    </string>
 </resources>

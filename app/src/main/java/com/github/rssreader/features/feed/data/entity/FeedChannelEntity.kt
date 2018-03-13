@@ -11,7 +11,7 @@ data class FeedChannelEntity(
         var title: String = "",
         @field:ElementList(entry = "link", inline = true)
         var links: List<String> = ArrayList(),
-        @field:Element(name = "description")
+        @field:Element(name = "description", required = false)
         var description: String = "",
         @field:Element(name = "language", required = false)
         var language: String = "",

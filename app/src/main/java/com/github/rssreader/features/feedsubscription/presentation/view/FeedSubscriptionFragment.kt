@@ -11,10 +11,13 @@ import android.widget.TextView
 import com.github.rssreader.R
 import com.github.rssreader.base.data.di.DaggerBaseComponent
 import com.github.rssreader.base.presentation.view.ActivityUtils
+import com.github.rssreader.features.feed.presentation.view.FeedContentListFragment
 import com.github.rssreader.features.feedsubscription.data.di.DaggerFeedSubscriptionComponent
 import com.github.rssreader.features.feedsubscription.data.di.FeedSubscriptionModule
+import com.github.rssreader.features.feedsubscription.domain.models.FeedSubscription
 import com.github.rssreader.features.feedsubscription.presentation.presenter.FeedSubscriptionPresenter
 import com.github.rssreader.network.DaggerNetworkComponent
+import com.hwangjr.rxbus.RxBus
 import kotlinx.android.synthetic.main.fragment_feed_subscription.text_input_layout_feed_url as feedUrlTextInputLayout
 import kotlinx.android.synthetic.main.fragment_feed_subscription.pb_feed_url as feedUrlProgressBar
 import javax.inject.Inject
@@ -22,7 +25,6 @@ import javax.inject.Inject
 class FeedSubscriptionFragment : Fragment(), FeedSubscriptionView {
 
     @Inject lateinit var presenter: FeedSubscriptionPresenter
-
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_feed_subscription, container, false)
@@ -84,6 +86,18 @@ class FeedSubscriptionFragment : Fragment(), FeedSubscriptionView {
     }
 
     override fun showFeedSubscribedMessage() {
-        Snackbar.make(activity?.findViewById(android.R.id.content)!!, getString(R.string.feed_subscription_success), Snackbar.LENGTH_LONG).show()
+        Snackbar
+                .make(activity?.findViewById(android.R.id.content)!!, getString(R.string.feed_subscription_success), Snackbar.LENGTH_LONG)
+                .setAction(R.string.show, feedSubscribedMessageAction)
+                .show()
+    }
+
+    private val feedSubscribedMessageAction = View.OnClickListener {
+        val bundle = Bundle()
+        bundle.putString(FeedSubscription::javaClass.name, feedUrlTextInputLayout.editText?.text.toString())
+        val fragment = FeedContentListFragment()
+        fragment.arguments = bundle
+
+        RxBus.get().post(fragment)
     }
 }
