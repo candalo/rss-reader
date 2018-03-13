@@ -50,6 +50,7 @@ ext {
     rxJavaVersion = '2.1.5'
     rxAndroidVersion = '2.0.1'
     rxKotlinVersion = '2.1.0'
+    rxBusVersion = '1.0.6'
     retrofitVersion = '2.3.0'
     retrofitAdapterRxJavaVersion = '2.3.0'
     retrofitConverterSimpleXmlVersion = '2.3.0'
@@ -89,6 +90,7 @@ dependencies {
     compile "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
     compile "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
     compile "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
+    implementation "com.hwangjr.rxbus:rxbus:$rxBusVersion"
 
     // network
     compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
