@@ -117,7 +117,7 @@ dependencies {
     implementation "co.zsmb:materialdrawer-kt:$materialDrawerVersion"
 
     // utils
-    compile "org.apache.directory.studio:org.apache.commons.io:$ioUtilsVersion"
+    testImplementation "org.apache.directory.studio:org.apache.commons.io:$ioUtilsVersion"
 }
 
 
